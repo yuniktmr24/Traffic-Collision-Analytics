@@ -12,3 +12,4 @@ object CrashYearlyDataframe {
   val df = CrashAggregateDataframe.df
     .withColumn("Year", year(col("Start_Time")))
 }
+
