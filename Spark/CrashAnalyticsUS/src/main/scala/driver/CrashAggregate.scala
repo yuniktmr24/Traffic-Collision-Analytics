@@ -37,6 +37,10 @@ object CrashAggregate {
     AggregateQueryRepository.topFiveStatesPerSeverityLevel(spark)
     AggregateQueryRepository.hourWhenAccidentsHappenQuery(spark)
     AggregateQueryRepository.daysWhenAccidentsHappenQuery(spark)
+    AggregateQueryRepository.citiesWhereAccidentsHappenQuery(spark)
+    AggregateQueryRepository.statesWhereAccidentsHappenQuery(spark)
+
+
     // Stop the SparkSession
     spark.stop()
   }
