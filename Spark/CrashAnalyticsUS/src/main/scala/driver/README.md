@@ -5,9 +5,11 @@ SparkSQL Application logic for performing analytics on aggregate data from 2016-
 ## Insights
 - Counts by accident severity :white_check_mark: (Yunik)
 - Top 5 states for each severity level :white_check_mark: (Yunik)
+- To be Planned...
 
 
 # CrashYearly.scala
 SparkSQL Application logic for performing analytics on yearly data. Get yearly insights
 
 ## Insights
+- To be Planned
