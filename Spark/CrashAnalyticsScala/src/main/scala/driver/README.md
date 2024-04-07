@@ -4,7 +4,7 @@ SparkSQL Application logic for performing analytics on aggregate data from 2016-
 
 ## Insights
 - Counts by accident severity
-- Top 5 states categorized by accident severity 
+- Top 5 states for each severity level 
 
 
 # CrashYearly.scala
