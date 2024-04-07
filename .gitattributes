@@ -1,2 +1,4 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
+Spark/CrashAnalyticsUS/src/main/scala/cache/yearly/README.md -filter -diff -merge
 Spark/CrashAnalyticsUS/src/main/scala/cache/** filter=lfs diff=lfs merge=lfs -text
+
