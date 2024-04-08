@@ -9,6 +9,7 @@ SparkSQL Application logic for performing analytics on aggregate data from 2016-
 - Ranking the days when most accidents happen :white_check_mark: (Yunik)
 - Ranking cities by most accidents :white_check_mark: (Yunik)
 - Ranking states by most accidents :white_check_mark: (Yunik)
+- Most Crashes by year (Yunik)
 - Top Weather conditions during crashes (Yunik)
 - States ranked by crashes in Heavy rain (Yunik)
 - States ranked by crashes in light snow (Yunik)
