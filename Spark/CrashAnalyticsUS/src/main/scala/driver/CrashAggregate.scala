@@ -34,12 +34,46 @@ object CrashAggregate {
     /*** RUN THE OTHER ANALYTICS QUERIES
      *
      */
+    /*
     AggregateQueryRepository.topFiveStatesPerSeverityLevel(spark)
     AggregateQueryRepository.hourWhenAccidentsHappenQuery(spark)
     AggregateQueryRepository.daysWhenAccidentsHappenQuery(spark)
     AggregateQueryRepository.citiesWhereAccidentsHappenQuery(spark)
     AggregateQueryRepository.statesWhereAccidentsHappenQuery(spark)
+    AggregateQueryRepository.rankingYearsByAccidentCountQuery(spark)
+    AggregateQueryRepository.topTemperatureRangesDuringAccidents(spark)
+    */
 
+    /**Weather queries
+    AggregateQueryRepository.topWeatherConditionsDuringAccidents(spark)
+    AggregateQueryRepository.topStatesForHeavyRainAccidents(spark)
+    AggregateQueryRepository.topStatesForLightSnowAccidents(spark)
+    AggregateQueryRepository.topStatesForSnowAccidents(spark)
+    AggregateQueryRepository.topStatesForMostlyCloudyAccidents(spark)
+    AggregateQueryRepository.topStatesForFairWeatherAccidents(spark)
+    */
+
+    /**CO Queries
+    AggregateQueryRepository.topWeatherConditionsInColorado(spark)
+    AggregateQueryRepository.topWindDirectionInColorado(spark)
+    AggregateQueryRepository.topWeatherConditionsForI70Colorado(spark)
+     */
+
+    /**Interstates in General*/
+    AggregateQueryRepository.topInterstatesForAccidents(spark)
+    AggregateQueryRepository.topStatesForI95Accidents(spark)
+    AggregateQueryRepository.topStatesForI10Accidents(spark)
+    AggregateQueryRepository.topStatesForI5Accidents(spark)
+    AggregateQueryRepository.topStatesForI75Accidents(spark)
+    AggregateQueryRepository.topStatesForI80Accidents(spark)
+
+    /**Interstates in snow*/
+    AggregateQueryRepository.topInterstatesForSnowAccidents(spark)
+    AggregateQueryRepository.topStatesForI90SnowAccidents(spark)
+    AggregateQueryRepository.topStatesForI94SnowAccidents(spark)
+    AggregateQueryRepository.topStatesForI80SnowAccidents(spark)
+    AggregateQueryRepository.topStatesForI35SnowAccidents(spark)
+    AggregateQueryRepository.topStatesForI70SnowAccidents(spark)
 
     // Stop the SparkSession
     spark.stop()
