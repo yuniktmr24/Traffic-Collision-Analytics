@@ -1,4 +1,4 @@
-package util
+package utils
 
 object FunctUtils {
   def printDashes(): Unit = {
