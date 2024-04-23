@@ -2,3 +2,6 @@
 *.csv
 *.zip
 Spark/CrashAnalyticsUS/src/main/scala/cache/year_*
+.metals/
+.scala-build/
+.vscode/
