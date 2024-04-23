@@ -11,7 +11,7 @@ object CrashYearlyDataframe {
     .master("local[*]") // Use local mode with all cores
     .getOrCreate()
 
-  val df = CrashAggregateDataframe.df
+  var df = CrashAggregateDataframe.df
     .withColumn("Year", year(col("Start_Time")))
 }
 

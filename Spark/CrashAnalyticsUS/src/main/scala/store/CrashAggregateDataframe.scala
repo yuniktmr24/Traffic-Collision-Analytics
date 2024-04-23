@@ -24,6 +24,4 @@ object CrashAggregateDataframe {
   df = df.withColumnRenamed("Visibility(mi)", "Visibility_mi")
   df = df.withColumnRenamed("Wind_Speed(mph)", "Wind_Speed")
   df = df.withColumnRenamed("Precipitation(in)", "Precipitation")
-
-  //could persist this as parquet for caching. but maybe not worth the storage overhead
 }

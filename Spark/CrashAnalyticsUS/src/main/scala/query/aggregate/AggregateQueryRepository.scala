@@ -7,7 +7,7 @@ object AggregateQueryRepository {
 
   def topFiveStatesPerSeverityLevel(spark: SparkSession): Unit = {
     FunctUtils.printDashes()
-    println("States ranked by Accident Severity Ratings (2016 - 2023)")
+    println("States ranked by Accident Severity Ratings")
     // SQL Query to find top 5 states for each severity level using a subquery for window function
     // 2016 - 2023 cumulative
     val query =
@@ -32,7 +32,7 @@ object AggregateQueryRepository {
 
   def hourWhenAccidentsHappenQuery(spark: SparkSession): Unit = {
     FunctUtils.printDashes()
-    println("Ranking by hour when most accidents happen (2016 - 2023)")
+    println("Ranking by hour when most accidents happen")
     // SQL Query to find out during which hour most collisions happen
     val query =
       """
@@ -50,7 +50,7 @@ object AggregateQueryRepository {
 
   def daysWhenAccidentsHappenQuery(spark: SparkSession): Unit = {
     FunctUtils.printDashes()
-    println("Ranking by day of the week when most accidents happen (2016 - 2023)")
+    println("Ranking by day of the week when most accidents happen")
 
     // SQL Query to find out on which day of the week most collisions happen
     val query =
@@ -70,7 +70,7 @@ object AggregateQueryRepository {
 
   def citiesWhereAccidentsHappenQuery(spark: SparkSession): Unit = {
     FunctUtils.printDashes()
-    println("Ranking by cities where most accidents happen (2016 - 2023)")
+    println("Ranking by cities where most accidents happen")
 
     val query =
       """
@@ -90,7 +90,7 @@ object AggregateQueryRepository {
 
   def statesWhereAccidentsHappenQuery(spark: SparkSession): Unit = {
     FunctUtils.printDashes()
-    println("Ranking by states where most accidents happen (2016 - 2023)")
+    println("Ranking by states where most accidents happen")
 
     val query =
       """
@@ -111,7 +111,7 @@ object AggregateQueryRepository {
 
   def rankingYearsByAccidentCountQuery(spark: SparkSession): Unit = {
     FunctUtils.printDashes()
-    println("Ranking by years when most accidents happened (2016 - 2023)")
+    println("Ranking by years when most accidents happened")
 
     spark.sql(
       """
@@ -140,32 +140,29 @@ object AggregateQueryRepository {
       """
       SELECT *,
         CASE
-          WHEN Temperature >= -20 AND Temperature < -15 THEN '-20 to -15'
-          WHEN Temperature >= -15 AND Temperature < -10 THEN '-15 to -10'
-          WHEN Temperature >= -10 AND Temperature < -5 THEN '-10 to -5'
-          WHEN Temperature >= -5 AND Temperature < 0 THEN '-5 to 0'
-          WHEN Temperature >= 0 AND Temperature < 5 THEN '0 to 5'
-          WHEN Temperature >= 5 AND Temperature < 10 THEN '5 to 10'
-          WHEN Temperature >= 10 AND Temperature < 15 THEN '10 to 15'
-          WHEN Temperature >= 15 AND Temperature < 20 THEN '15 to 20'
-          WHEN Temperature >= 20 AND Temperature < 25 THEN '20 to 25'
-          WHEN Temperature >= 25 AND Temperature < 30 THEN '25 to 30'
-          WHEN Temperature >= 30 AND Temperature < 35 THEN '30 to 35'
-          WHEN Temperature >= 35 AND Temperature < 40 THEN '35 to 40'
-          WHEN Temperature >= 40 AND Temperature < 45 THEN '40 to 45'
-          WHEN Temperature >= 45 AND Temperature < 50 THEN '45 to 50'
-          WHEN Temperature >= 50 AND Temperature < 55 THEN '50 to 55'
-          WHEN Temperature >= 55 AND Temperature < 60 THEN '55 to 60'
-          WHEN Temperature >= 60 AND Temperature < 65 THEN '60 to 65'
-          WHEN Temperature >= 65 AND Temperature < 70 THEN '65 to 70'
-          WHEN Temperature >= 70 AND Temperature < 75 THEN '70 to 75'
-          WHEN Temperature >= 75 AND Temperature < 80 THEN '75 to 80'
-          WHEN Temperature >= 80 AND Temperature < 85 THEN '80 to 85'
-          WHEN Temperature >= 85 AND Temperature < 90 THEN '85 to 90'
-          WHEN Temperature >= 90 AND Temperature < 95 THEN '90 to 95'
-          WHEN Temperature >= 95 AND Temperature < 100 THEN '95 to 100'
-          WHEN Temperature >= 100 AND Temperature < 105 THEN '100 to 105'
-          WHEN Temperature >= 105 AND Temperature < 110 THEN '105 to 110'
+          WHEN Temperature < 0 THEN 'Below Zero F'
+          WHEN Temperature >= 0 AND Temperature < 6 THEN '0 to 6'
+          WHEN Temperature >= 6 AND Temperature < 11 THEN '6 to 11'
+          WHEN Temperature >= 11 AND Temperature < 16 THEN '11 to 16'
+          WHEN Temperature >= 16 AND Temperature < 21 THEN '16 to 21'
+          WHEN Temperature >= 21 AND Temperature < 26 THEN '21 to 26'
+          WHEN Temperature >= 26 AND Temperature < 31 THEN '26 to 31'
+          WHEN Temperature >= 31 AND Temperature < 36 THEN '31 to 36'
+          WHEN Temperature >= 36 AND Temperature < 41 THEN '36 to 41'
+          WHEN Temperature >= 41 AND Temperature < 46 THEN '41 to 46'
+          WHEN Temperature >= 46 AND Temperature < 51 THEN '46 to 51'
+          WHEN Temperature >= 51 AND Temperature < 56 THEN '51 to 56'
+          WHEN Temperature >= 56 AND Temperature < 61 THEN '56 to 61'
+          WHEN Temperature >= 61 AND Temperature < 66 THEN '61 to 66'
+          WHEN Temperature >= 66 AND Temperature < 71 THEN '66 to 71'
+          WHEN Temperature >= 71 AND Temperature < 76 THEN '71 to 76'
+          WHEN Temperature >= 76 AND Temperature < 81 THEN '76 to 81'
+          WHEN Temperature >= 81 AND Temperature < 86 THEN '81 to 86'
+          WHEN Temperature >= 86 AND Temperature < 91 THEN '86 to 91'
+          WHEN Temperature >= 91 AND Temperature < 96 THEN '91 to 96'
+          WHEN Temperature >= 96 AND Temperature < 101 THEN '96 to 101'
+          WHEN Temperature >= 101 AND Temperature < 106 THEN '101 to 106'
+          WHEN Temperature >= 106 AND Temperature < 111 THEN '106 to 111'
           ELSE 'Above 110 (Too Hot)'
         END AS Temp_Range
       FROM accidents
@@ -412,6 +409,24 @@ object AggregateQueryRepository {
         GROUP BY State
         ORDER BY Count DESC
         LIMIT 5
+      """)
+
+
+    query.show()
+    FunctUtils.printDashes()
+  }
+
+  def topStatesForAccidents(spark: SparkSession): Unit = {
+    FunctUtils.printDashes()
+    println("Top 10 States for Accidents")
+
+    val query = spark.sql(
+      """
+        SELECT State, COUNT(*) AS Count
+        FROM accidents
+        GROUP BY State
+        ORDER BY Count DESC
+        LIMIT 10
       """)
 
 
