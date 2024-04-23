@@ -1,3 +1,4 @@
 /datasets
 *.csv
 *.zip
+Spark/CrashAnalyticsUS/src/main/scala/cache/year_*
