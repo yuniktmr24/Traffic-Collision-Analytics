@@ -17,7 +17,12 @@ object CrashYearly {
     Logger.getLogger("org").setLevel(Level.ERROR)
     Logger.getLogger("akka").setLevel(Level.ERROR)
 
-    val df = CrashYearlyDataframe.df
+    var csvFilePath = ""
+    if (args.length != 0) {
+      csvFilePath = args(0)
+    }
+
+    val df = CrashYearlyDataframe.loadDataFrame(csvFilePath)
     val schema = TrafficCollisionSchema.schema
 
     // Find distinct years in the DataFrame

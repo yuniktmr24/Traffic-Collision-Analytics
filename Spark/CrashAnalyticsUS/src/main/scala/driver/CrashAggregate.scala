@@ -15,8 +15,13 @@ object CrashAggregate {
     Logger.getLogger("org").setLevel(Level.ERROR)
     Logger.getLogger("akka").setLevel(Level.ERROR)
 
+    var csvFilePath = ""
+    if (args.length != 0) {
+      csvFilePath = args(0)
+    }
+
     // Read data using the defined schema
-    val df = CrashAggregateDataframe.df
+    val df = CrashAggregateDataframe.loadDataFrame(csvFilePath)
     // Register the DataFrame as a SQL temporary view
     df.createOrReplaceTempView("accidents")
 
@@ -34,7 +39,7 @@ object CrashAggregate {
     /*** RUN THE OTHER ANALYTICS QUERIES
      *
      */
-    /*
+
     AggregateQueryRepository.topFiveStatesPerSeverityLevel(spark)
     AggregateQueryRepository.hourWhenAccidentsHappenQuery(spark)
     AggregateQueryRepository.daysWhenAccidentsHappenQuery(spark)
@@ -42,22 +47,21 @@ object CrashAggregate {
     AggregateQueryRepository.statesWhereAccidentsHappenQuery(spark)
     AggregateQueryRepository.rankingYearsByAccidentCountQuery(spark)
     AggregateQueryRepository.topTemperatureRangesDuringAccidents(spark)
-    */
 
-    /**Weather queries
+
+    /**Weather queries*/
     AggregateQueryRepository.topWeatherConditionsDuringAccidents(spark)
     AggregateQueryRepository.topStatesForHeavyRainAccidents(spark)
-    AggregateQueryRepository.topStatesForLightSnowAccidents(spark)
     AggregateQueryRepository.topStatesForSnowAccidents(spark)
     AggregateQueryRepository.topStatesForMostlyCloudyAccidents(spark)
     AggregateQueryRepository.topStatesForFairWeatherAccidents(spark)
-    */
 
-    /**CO Queries
+
+    /**CO Queries*/
     AggregateQueryRepository.topWeatherConditionsInColorado(spark)
     AggregateQueryRepository.topWindDirectionInColorado(spark)
     AggregateQueryRepository.topWeatherConditionsForI70Colorado(spark)
-     */
+
 
     /**Interstates in General*/
     AggregateQueryRepository.topInterstatesForAccidents(spark)

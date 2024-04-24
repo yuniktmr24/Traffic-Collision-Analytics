@@ -1,6 +1,6 @@
 package store
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import schema.TrafficCollisionSchema
 
 object CrashAggregateDataframe {
@@ -9,19 +9,22 @@ object CrashAggregateDataframe {
     .master("local[*]") // Use local mode with all cores
     .getOrCreate()
 
-  // Read data using the defined schema
-  var df = spark.read
-    .option("header", "true") // Assumes the first row is a header
-    .schema(TrafficCollisionSchema.schema)
-    .csv("src/main/resources/US_Accidents_March23.csv")
+  def loadDataFrame(csvFilePath: String): DataFrame = {
+    var df = spark.read
+      .option("header", "true")
+      .schema(TrafficCollisionSchema.schema)
+      .csv(csvFilePath)
 
-  //dropping the parentheses. to avoid spark sql analysisException
-  df = df.withColumnRenamed("Distance(mi)", "Distance_mi")
-  df = df.withColumnRenamed("Temperature(F)", "Temperature")
-  df = df.withColumnRenamed("Wind_Chill(F)", "Wind_Chill")
-  df = df.withColumnRenamed("Humidity(%)", "Humidity_Percent")
-  df = df.withColumnRenamed("Pressure(in)", "Pressure_in")
-  df = df.withColumnRenamed("Visibility(mi)", "Visibility_mi")
-  df = df.withColumnRenamed("Wind_Speed(mph)", "Wind_Speed")
-  df = df.withColumnRenamed("Precipitation(in)", "Precipitation")
+    // Rename columns to avoid issues with parentheses in SQL queries
+    df = df.withColumnRenamed("Distance(mi)", "Distance_mi")
+      .withColumnRenamed("Temperature(F)", "Temperature")
+      .withColumnRenamed("Wind_Chill(F)", "Wind_Chill")
+      .withColumnRenamed("Humidity(%)", "Humidity_Percent")
+      .withColumnRenamed("Pressure(in)", "Pressure_in")
+      .withColumnRenamed("Visibility(mi)", "Visibility_mi")
+      .withColumnRenamed("Wind_Speed(mph)", "Wind_Speed")
+      .withColumnRenamed("Precipitation(in)", "Precipitation")
+
+    df
+  }
 }

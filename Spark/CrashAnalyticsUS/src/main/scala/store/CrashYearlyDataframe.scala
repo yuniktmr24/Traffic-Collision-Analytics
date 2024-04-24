@@ -1,7 +1,9 @@
 package store
 
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
+import schema.TrafficCollisionSchema
+import store.CrashAggregateDataframe.spark
 
 object CrashYearlyDataframe {
   val spark = SparkSession.builder()
@@ -11,7 +13,11 @@ object CrashYearlyDataframe {
     .master("local[*]") // Use local mode with all cores
     .getOrCreate()
 
-  var df = CrashAggregateDataframe.df
-    .withColumn("Year", year(col("Start_Time")))
+  def loadDataFrame(csvFilePath: String): DataFrame = {
+    var df = CrashAggregateDataframe.loadDataFrame(csvFilePath)
+      .withColumn("Year", year(col("Start_Time")))
+    df
+  }
+
 }
 
