@@ -1,18 +1,32 @@
 package driver
 import org.apache.log4j.{Level, Logger}
 import store.CrashNYCDataFrame
+import schema.NYCCollisionSchema
 import utils.FunctUtils
 import query.AggregateQueryRepository
 
 object CrashAggregateNYC {
   def main(args: Array[String]): Unit = {
+  if (args.length != 1) {
+      println("Usage: main <csv_file_path>")
+      System.exit(1)
+    }
+
+    val csvFilePath = args(0)
+
     val spark = CrashNYCDataFrame.spark
 
     Logger.getLogger("org").setLevel(Level.ERROR)
     Logger.getLogger("akka").setLevel(Level.ERROR)
 
     // Read data using the defined schema
-    val df = CrashNYCDataFrame.df
+//    val df = CrashNYCDataFrame.df
+
+    var df = spark.read
+      .option("header", "true") // Assumes the first row is a header
+      .schema(NYCCollisionSchema.schema)
+      .csv(csvFilePath)
+
     // Register the DataFrame as a SQL temporary view
     df.createOrReplaceTempView("nyc_accidents")
 

@@ -3,16 +3,27 @@ import org.apache.log4j.{Level, Logger}
 import store.CrashChicagoDataFrame
 import utils.FunctUtils
 import query.AggregateQueryRepository
+import schema.ChicagoCollisionSchema
 
 object CrashAggregateChicago {
   def main(args: Array[String]): Unit = {
+      if (args.length != 1) {
+      println("Usage: main <csv_file_path>")
+      System.exit(1)
+    }
     val spark = CrashChicagoDataFrame.spark
 
     Logger.getLogger("org").setLevel(Level.ERROR)
     Logger.getLogger("akka").setLevel(Level.ERROR)
 
     // Read data using the defined schema
-    val df = CrashChicagoDataFrame.df
+    // val df = CrashChicagoDataFrame.df
+    val csvFilePath = args(0)
+
+        var df = spark.read
+      .option("header", "true") // Assumes the first row is a header
+      .schema(ChicagoCollisionSchema.schema)
+      .csv(csvFilePath)
     // Register the DataFrame as a SQL temporary view
     df.createOrReplaceTempView("chicago_accidents")
 
