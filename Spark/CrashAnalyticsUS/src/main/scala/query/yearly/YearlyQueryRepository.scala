@@ -1,5 +1,8 @@
 package query.yearly
 
+import org.apache.spark.sql.SparkSession
+import util.FunctUtils
+
 object YearlyQueryRepository {
   def topFiveStatesPerSeverityLevel(spark: SparkSession): Unit = {
     FunctUtils.printDashes()
