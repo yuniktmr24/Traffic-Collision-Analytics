@@ -11,6 +11,10 @@ object CrashAggregateChicago {
       println("Usage: main <csv_file_path>")
       System.exit(1)
     }
+
+    val startTime1 = System.currentTimeMillis()
+
+
     val spark = CrashChicagoDataFrame.spark
 
     Logger.getLogger("org").setLevel(Level.ERROR)
@@ -38,7 +42,7 @@ object CrashAggregateChicago {
 //    val accidentsBySeverity = df.groupBy("Severity").count()
 //    accidentsBySeverity.show()
 
-
+    val startTime2 = System.currentTimeMillis()
 //    Run aggregate queries for chicago
     AggregateQueryRepository.collisionsPerYear(spark)
     AggregateQueryRepository.crashesPerDayOfWeek(spark)
@@ -48,7 +52,14 @@ object CrashAggregateChicago {
     AggregateQueryRepository.crashesPerRoadDefect(spark)
     AggregateQueryRepository.crashesPerInjury(spark)
     AggregateQueryRepository.crashesPerCause(spark)
-    
+
+    val endTime = System.currentTimeMillis()
+
+    val totalTime1 = endTime - startTime1
+    val totalTime2 = endTime - startTime2
+
+    println(s"===================================query execution time: $totalTime2 milliseconds==========================================================")
+    println(s"====================================total execution time: $totalTime1 milliseconds===========================================================")
 
     // Stop the SparkSession
     spark.stop()

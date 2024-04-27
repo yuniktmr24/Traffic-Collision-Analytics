@@ -19,6 +19,7 @@ object CrashAggregate {
     if (args.length != 0) {
       csvFilePath = args(0)
     }
+    val startTime1 = System.currentTimeMillis()
 
     // Read data using the defined schema
     val df = CrashAggregateDataframe.loadDataFrame(csvFilePath)
@@ -39,6 +40,9 @@ object CrashAggregate {
     /*** RUN THE OTHER ANALYTICS QUERIES
      *
      */
+
+    val startTime2 = System.currentTimeMillis()
+
 
     AggregateQueryRepository.topFiveStatesPerSeverityLevel(spark)
     AggregateQueryRepository.hourWhenAccidentsHappenQuery(spark)
@@ -78,6 +82,14 @@ object CrashAggregate {
     AggregateQueryRepository.topStatesForI80SnowAccidents(spark)
     AggregateQueryRepository.topStatesForI35SnowAccidents(spark)
     AggregateQueryRepository.topStatesForI70SnowAccidents(spark)
+
+    val endTime = System.currentTimeMillis()
+
+    val totalTime1 = endTime - startTime1
+    val totalTime2 = endTime - startTime2
+
+    println(s"===================================query execution time: $totalTime2 milliseconds==========================================================")
+    println(s"====================================total execution time: $totalTime1 milliseconds===========================================================")
 
     // Stop the SparkSession
     spark.stop()

@@ -12,6 +12,9 @@ object CrashAggregateNYC {
       System.exit(1)
     }
 
+    val startTime1 = System.currentTimeMillis()
+
+
     val csvFilePath = args(0)
 
     val spark = CrashNYCDataFrame.spark
@@ -43,13 +46,23 @@ object CrashAggregateNYC {
 
 
 //    Run aggregate queries for NYC
+
+    val startTime2 = System.currentTimeMillis()
     AggregateQueryRepository.collisionsPerYear(spark)
     AggregateQueryRepository.crashesPerDayOfWeek(spark)
     AggregateQueryRepository.crashesPerHourRanked(spark)
     AggregateQueryRepository.collisionsWithPedestriansPerYear(spark)
     AggregateQueryRepository.collisionsByBoroughAndYear(spark)
     AggregateQueryRepository.crashesWithDifferentVehicleCodesPerYear(spark)
-    
+
+    val endTime = System.currentTimeMillis()
+
+    val totalTime1 = endTime - startTime1
+    val totalTime2 = endTime - startTime2
+
+    println(s"===================================query execution time: $totalTime2 milliseconds==========================================================")
+    println(s"====================================total execution time: $totalTime1 milliseconds===========================================================")
+
 
     // Stop the SparkSession
     spark.stop()
