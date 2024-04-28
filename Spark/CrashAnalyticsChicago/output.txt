@@ -1,0 +1,1305 @@
+24/04/27 13:14:04 INFO SparkContext: Running Spark version 3.5.0
+24/04/27 13:14:04 INFO SparkContext: OS info Linux, 4.18.0-513.18.1.el8_9.x86_64, amd64
+24/04/27 13:14:04 INFO SparkContext: Java version 11.0.22
+24/04/27 13:14:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/04/27 13:14:04 INFO ResourceUtils: ==============================================================
+24/04/27 13:14:04 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/04/27 13:14:04 INFO ResourceUtils: ==============================================================
+24/04/27 13:14:04 INFO SparkContext: Submitted application: Chicago Crash Analytics
+24/04/27 13:14:04 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/04/27 13:14:04 INFO ResourceProfile: Limiting resource is cpu
+24/04/27 13:14:04 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/04/27 13:14:04 INFO SecurityManager: Changing view acls to: dilochan
+24/04/27 13:14:04 INFO SecurityManager: Changing modify acls to: dilochan
+24/04/27 13:14:04 INFO SecurityManager: Changing view acls groups to:
+24/04/27 13:14:04 INFO SecurityManager: Changing modify acls groups to:
+24/04/27 13:14:04 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: dilochan; groups with view permissions: EMPTY; users with modify permissions: dilochan; groups with modify permissions: EMPTY
+24/04/27 13:14:04 INFO Utils: Successfully started service 'sparkDriver' on port 45201.
+24/04/27 13:14:04 INFO SparkEnv: Registering MapOutputTracker
+24/04/27 13:14:04 INFO SparkEnv: Registering BlockManagerMaster
+24/04/27 13:14:04 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/04/27 13:14:04 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/04/27 13:14:04 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/04/27 13:14:04 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-6b0bfe6c-2794-499c-a6e3-b13672b9b749
+24/04/27 13:14:04 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/04/27 13:14:04 INFO SparkEnv: Registering OutputCommitCoordinator
+24/04/27 13:14:04 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/04/27 13:14:04 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/04/27 13:14:04 INFO SparkContext: Added JAR file:/s/chopin/k/grad/dilochan/Documents/cs555/Traffic-Collision-Analytics/Spark/CrashAnalyticsChicago/target/scala-2.12/crashanalyticschicago_2.12-0.1.jar at spark://charleston.cs.colostate.edu:45201/jars/crashanalyticschicago_2.12-0.1.jar with timestamp 1714245244104
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://charleston:30156...
+24/04/27 13:14:04 INFO TransportClientFactory: Successfully created connection to charleston/129.82.44.136:30156 after 14 ms (0 ms spent in bootstraps)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240427131404-0002
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/0 on worker-20240427122729-129.82.44.169-39817 (129.82.44.169:39817) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/0 on hostPort 129.82.44.169:39817 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/1 on worker-20240427122727-129.82.44.135-44367 (129.82.44.135:44367) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/1 on hostPort 129.82.44.135:44367 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/2 on worker-20240427122727-129.82.44.141-45463 (129.82.44.141:45463) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/2 on hostPort 129.82.44.141:45463 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/3 on worker-20240427122729-129.82.44.134-42267 (129.82.44.134:42267) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/3 on hostPort 129.82.44.134:42267 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/4 on worker-20240426180810-129.82.44.140-46249 (129.82.44.140:46249) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/4 on hostPort 129.82.44.140:46249 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/5 on worker-20240427122729-129.82.44.139-37895 (129.82.44.139:37895) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/5 on hostPort 129.82.44.139:37895 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/6 on worker-20240427122727-129.82.44.134-37989 (129.82.44.134:37989) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/6 on hostPort 129.82.44.134:37989 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/7 on worker-20240427122726-129.82.44.139-36927 (129.82.44.139:36927) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/7 on hostPort 129.82.44.139:36927 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39973.
+24/04/27 13:14:04 INFO NettyBlockTransferService: Server created on charleston.cs.colostate.edu:39973
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/8 on worker-20240426180814-129.82.44.140-32947 (129.82.44.140:32947) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/8 on hostPort 129.82.44.140:32947 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/9 on worker-20240427122727-129.82.44.169-35423 (129.82.44.169:35423) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/9 on hostPort 129.82.44.169:35423 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/10 on worker-20240427122729-129.82.44.141-41101 (129.82.44.141:41101) with 1 core(s)
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/10 on hostPort 129.82.44.141:41101 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240427131404-0002/11 on worker-20240427122729-129.82.44.135-37963 (129.82.44.135:37963) with 1 core(s)
+24/04/27 13:14:04 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20240427131404-0002/11 on hostPort 129.82.44.135:37963 with 1 core(s), 1024.0 MiB RAM
+24/04/27 13:14:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, charleston.cs.colostate.edu, 39973, None)
+24/04/27 13:14:04 INFO BlockManagerMasterEndpoint: Registering block manager charleston.cs.colostate.edu:39973 with 434.4 MiB RAM, BlockManagerId(driver, charleston.cs.colostate.edu, 39973, None)
+24/04/27 13:14:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, charleston.cs.colostate.edu, 39973, None)
+24/04/27 13:14:04 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, charleston.cs.colostate.edu, 39973, None)
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/2 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/7 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/11 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/9 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/0 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/3 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/5 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/1 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/10 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/6 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/4 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240427131404-0002/8 is now RUNNING
+24/04/27 13:14:04 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+24/04/27 13:14:04 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/04/27 13:14:04 INFO SharedState: Warehouse path is 'file:/s/chopin/k/grad/dilochan/Documents/cs555/Traffic-Collision-Analytics/Spark/CrashAnalyticsChicago/target/spark-warehouse'.
+24/04/27 13:14:05 INFO InMemoryFileIndex: It took 34 ms to list leaf files for 1 paths.
+24/04/27 13:14:05 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+24/04/27 13:14:05 INFO FileSourceStrategy: Pushed Filters:
+24/04/27 13:14:05 INFO FileSourceStrategy: Post-Scan Filters:
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.139:51658) with ID 5,  ResourceProfileId 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.139:51674) with ID 7,  ResourceProfileId 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.134:40908) with ID 6,  ResourceProfileId 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.135:45934) with ID 11,  ResourceProfileId 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.134:40914) with ID 3,  ResourceProfileId 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.135:45944) with ID 1,  ResourceProfileId 0
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.139:40523 with 434.4 MiB RAM, BlockManagerId(5, 129.82.44.139, 40523, None)
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.139:36603 with 434.4 MiB RAM, BlockManagerId(7, 129.82.44.139, 36603, None)
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.134:36063 with 434.4 MiB RAM, BlockManagerId(6, 129.82.44.134, 36063, None)
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.141:48894) with ID 2,  ResourceProfileId 0
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.135:40785 with 434.4 MiB RAM, BlockManagerId(11, 129.82.44.135, 40785, None)
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.134:38603 with 434.4 MiB RAM, BlockManagerId(3, 129.82.44.134, 38603, None)
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.135:41385 with 434.4 MiB RAM, BlockManagerId(1, 129.82.44.135, 41385, None)
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.141:48896) with ID 10,  ResourceProfileId 0
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.141:45509 with 434.4 MiB RAM, BlockManagerId(2, 129.82.44.141, 45509, None)
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.141:44111 with 434.4 MiB RAM, BlockManagerId(10, 129.82.44.141, 44111, None)
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.169:44872) with ID 0,  ResourceProfileId 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.169:44878) with ID 9,  ResourceProfileId 0
+24/04/27 13:14:06 INFO CodeGenerator: Code generated in 92.475675 ms
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.169:37583 with 434.4 MiB RAM, BlockManagerId(0, 129.82.44.169, 37583, None)
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.169:37571 with 434.4 MiB RAM, BlockManagerId(9, 129.82.44.169, 37571, None)
+24/04/27 13:14:06 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 203.2 KiB, free 434.2 MiB)
+24/04/27 13:14:06 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 434.2 MiB)
+24/04/27 13:14:06 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:06 INFO SparkContext: Created broadcast 0 from count at CrashAggregateChicago.scala:36
+24/04/27 13:14:06 INFO FileSourceScanExec: Planning scan with bin packing, max size: 44293863 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:06 INFO DAGScheduler: Registering RDD 3 (count at CrashAggregateChicago.scala:36) as input to shuffle 0
+24/04/27 13:14:06 INFO DAGScheduler: Got map stage job 0 (count at CrashAggregateChicago.scala:36) with 10 output partitions
+24/04/27 13:14:06 INFO DAGScheduler: Final stage: ShuffleMapStage 0 (count at CrashAggregateChicago.scala:36)
+24/04/27 13:14:06 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:06 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:06 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at count at CrashAggregateChicago.scala:36), which has no missing parents
+24/04/27 13:14:06 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 20.0 KiB, free 434.1 MiB)
+24/04/27 13:14:06 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 9.9 KiB, free 434.1 MiB)
+24/04/27 13:14:06 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:06 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:06 INFO DAGScheduler: Submitting 10 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at count at CrashAggregateChicago.scala:36) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+24/04/27 13:14:06 INFO TaskSchedulerImpl: Adding task set 0.0 with 10 tasks resource profile 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.140:35162) with ID 8,  ResourceProfileId 0
+24/04/27 13:14:06 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.82.44.140:35166) with ID 4,  ResourceProfileId 0
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.140:44139 with 434.4 MiB RAM, BlockManagerId(8, 129.82.44.140, 44139, None)
+24/04/27 13:14:06 INFO BlockManagerMasterEndpoint: Registering block manager 129.82.44.140:44927 with 434.4 MiB RAM, BlockManagerId(4, 129.82.44.140, 44927, None)
+24/04/27 13:14:30 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (129.82.44.139, executor 5, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:30 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.139:40523 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:31 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (129.82.44.139, executor 5, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:32 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2453 ms on 129.82.44.139 (executor 5) (1/10)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (129.82.44.139, executor 7, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (129.82.44.135, executor 11, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (129.82.44.135, executor 1, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:32 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.139:36603 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:32 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.135:40785 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:32 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.135:41385 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (129.82.44.169, executor 0, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (129.82.44.141, executor 10, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (129.82.44.169, executor 9, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:32 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8) (129.82.44.141, executor 2, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.169:37583 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.141:44111 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.141:45509 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 129.82.44.169:37571 (size: 9.9 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9) (129.82.44.139, executor 5, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:33 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 686 ms on 129.82.44.139 (executor 5) (2/10)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 56 ms on 129.82.44.139 (executor 5) (3/10)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:33 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 1176 ms on 129.82.44.139 (executor 7) (4/10)
+24/04/27 13:14:33 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 981 ms on 129.82.44.169 (executor 0) (5/10)
+24/04/27 13:14:34 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 1362 ms on 129.82.44.135 (executor 1) (6/10)
+24/04/27 13:14:34 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 1616 ms on 129.82.44.135 (executor 11) (7/10)
+24/04/27 13:14:35 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 2018 ms on 129.82.44.169 (executor 9) (8/10)
+24/04/27 13:14:35 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 2018 ms on 129.82.44.141 (executor 2) (9/10)
+24/04/27 13:14:35 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 2135 ms on 129.82.44.141 (executor 10) (10/10)
+24/04/27 13:14:35 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+24/04/27 13:14:35 INFO DAGScheduler: ShuffleMapStage 0 (count at CrashAggregateChicago.scala:36) finished in 28.806 s
+24/04/27 13:14:35 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:35 INFO DAGScheduler: running: Set()
+24/04/27 13:14:35 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:35 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:35 INFO CodeGenerator: Code generated in 5.743496 ms
+24/04/27 13:14:35 INFO SparkContext: Starting job: count at CrashAggregateChicago.scala:36
+24/04/27 13:14:35 INFO DAGScheduler: Got job 1 (count at CrashAggregateChicago.scala:36) with 1 output partitions
+24/04/27 13:14:35 INFO DAGScheduler: Final stage: ResultStage 2 (count at CrashAggregateChicago.scala:36)
+24/04/27 13:14:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+24/04/27 13:14:35 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:35 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[6] at count at CrashAggregateChicago.scala:36), which has no missing parents
+24/04/27 13:14:35 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 12.5 KiB, free 434.1 MiB)
+24/04/27 13:14:35 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 5.9 KiB, free 434.1 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 5.9 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[6] at count at CrashAggregateChicago.scala:36) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:35 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 10) (129.82.44.139, executor 5, partition 0, NODE_LOCAL, 7827 bytes)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 129.82.44.139:40523 (size: 5.9 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 129.82.44.139:51658
+24/04/27 13:14:35 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 10) in 102 ms on 129.82.44.139 (executor 5) (1/1)
+24/04/27 13:14:35 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+24/04/27 13:14:35 INFO DAGScheduler: ResultStage 2 (count at CrashAggregateChicago.scala:36) finished in 0.106 s
+24/04/27 13:14:35 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:35 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+24/04/27 13:14:35 INFO DAGScheduler: Job 1 finished: count at CrashAggregateChicago.scala:36, took 0.112742 s
+Number of rows in CSV: 810066
+Number of columns in DataFrame: 48
+-----------------------------------------
+Number of Collisions Per Year
+24/04/27 13:14:35 INFO FileSourceStrategy: Pushed Filters: IsNotNull(CRASH_DATE)
+24/04/27 13:14:35 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(CRASH_DATE#2),(substring(CRASH_DATE#2, 7, 4) >= 2016),(substring(CRASH_DATE#2, 7, 4) <= 2023)
+24/04/27 13:14:35 INFO CodeGenerator: Code generated in 30.032209 ms
+24/04/27 13:14:35 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 203.2 KiB, free 433.9 MiB)
+24/04/27 13:14:35 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 433.9 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO SparkContext: Created broadcast 3 from show at AggregateQueryRepository.scala:25
+24/04/27 13:14:35 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:35 INFO DAGScheduler: Registering RDD 10 (show at AggregateQueryRepository.scala:25) as input to shuffle 1
+24/04/27 13:14:35 INFO DAGScheduler: Got map stage job 2 (show at AggregateQueryRepository.scala:25) with 12 output partitions
+24/04/27 13:14:35 INFO DAGScheduler: Final stage: ShuffleMapStage 3 (show at AggregateQueryRepository.scala:25)
+24/04/27 13:14:35 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:35 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:35 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[10] at show at AggregateQueryRepository.scala:25), which has no missing parents
+24/04/27 13:14:35 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 43.8 KiB, free 433.8 MiB)
+24/04/27 13:14:35 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 20.6 KiB, free 433.8 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:35 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[10] at show at AggregateQueryRepository.scala:25) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:35 INFO TaskSchedulerImpl: Adding task set 3.0 with 12 tasks resource profile 0
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 11) (129.82.44.141, executor 2, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 12) (129.82.44.135, executor 11, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 13) (129.82.44.140, executor 8, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 14) (129.82.44.135, executor 1, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 4.0 in stage 3.0 (TID 15) (129.82.44.141, executor 10, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 5.0 in stage 3.0 (TID 16) (129.82.44.134, executor 6, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 6.0 in stage 3.0 (TID 17) (129.82.44.134, executor 3, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 7.0 in stage 3.0 (TID 18) (129.82.44.169, executor 0, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 8.0 in stage 3.0 (TID 19) (129.82.44.169, executor 9, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 9.0 in stage 3.0 (TID 20) (129.82.44.139, executor 7, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 10.0 in stage 3.0 (TID 21) (129.82.44.139, executor 5, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO TaskSetManager: Starting task 11.0 in stage 3.0 (TID 22) (129.82.44.140, executor 4, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.139:40523 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.135:40785 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.135:41385 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.139:36603 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.169:37583 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.169:37571 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.141:45509 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.141:44111 (size: 20.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.134:38603 (size: 20.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.134:36063 (size: 20.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.140:44927 (size: 20.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 129.82.44.140:44139 (size: 20.6 KiB, free: 434.4 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:35 INFO TaskSetManager: Finished task 9.0 in stage 3.0 (TID 20) in 374 ms on 129.82.44.139 (executor 7) (1/12)
+24/04/27 13:14:35 INFO TaskSetManager: Finished task 10.0 in stage 3.0 (TID 21) in 385 ms on 129.82.44.139 (executor 5) (2/12)
+24/04/27 13:14:35 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 11) in 461 ms on 129.82.44.141 (executor 2) (3/12)
+24/04/27 13:14:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:36 INFO TaskSetManager: Finished task 8.0 in stage 3.0 (TID 19) in 809 ms on 129.82.44.169 (executor 9) (4/12)
+24/04/27 13:14:36 INFO TaskSetManager: Finished task 7.0 in stage 3.0 (TID 18) in 816 ms on 129.82.44.169 (executor 0) (5/12)
+24/04/27 13:14:36 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 12) in 975 ms on 129.82.44.135 (executor 11) (6/12)
+24/04/27 13:14:36 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 14) in 1145 ms on 129.82.44.135 (executor 1) (7/12)
+24/04/27 13:14:36 INFO TaskSetManager: Finished task 4.0 in stage 3.0 (TID 15) in 1178 ms on 129.82.44.141 (executor 10) (8/12)
+24/04/27 13:14:36 INFO TaskSetManager: Finished task 5.0 in stage 3.0 (TID 16) in 1244 ms on 129.82.44.134 (executor 6) (9/12)
+24/04/27 13:14:36 INFO TaskSetManager: Finished task 6.0 in stage 3.0 (TID 17) in 1260 ms on 129.82.44.134 (executor 3) (10/12)
+24/04/27 13:14:37 INFO TaskSetManager: Finished task 11.0 in stage 3.0 (TID 22) in 1657 ms on 129.82.44.140 (executor 4) (11/12)
+24/04/27 13:14:37 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 13) in 1924 ms on 129.82.44.140 (executor 8) (12/12)
+24/04/27 13:14:37 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool
+24/04/27 13:14:37 INFO DAGScheduler: ShuffleMapStage 3 (show at AggregateQueryRepository.scala:25) finished in 1.930 s
+24/04/27 13:14:37 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:37 INFO DAGScheduler: running: Set()
+24/04/27 13:14:37 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:37 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:37 INFO ShufflePartitionsUtil: For shuffle(1), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:37 INFO CodeGenerator: Code generated in 6.206518 ms
+24/04/27 13:14:37 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:37 INFO CodeGenerator: Code generated in 6.520413 ms
+24/04/27 13:14:37 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:25
+24/04/27 13:14:37 INFO DAGScheduler: Got job 3 (show at AggregateQueryRepository.scala:25) with 1 output partitions
+24/04/27 13:14:37 INFO DAGScheduler: Final stage: ResultStage 5 (show at AggregateQueryRepository.scala:25)
+24/04/27 13:14:37 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+24/04/27 13:14:37 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:37 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[14] at show at AggregateQueryRepository.scala:25), which has no missing parents
+24/04/27 13:14:37 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 47.2 KiB, free 433.8 MiB)
+24/04/27 13:14:37 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 22.3 KiB, free 433.8 MiB)
+24/04/27 13:14:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 22.3 KiB, free: 434.3 MiB)
+24/04/27 13:14:37 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[14] at show at AggregateQueryRepository.scala:25) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:37 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+24/04/27 13:14:37 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 23) (129.82.44.141, executor 10, partition 0, PROCESS_LOCAL, 7827 bytes)
+24/04/27 13:14:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 129.82.44.141:44111 (size: 22.3 KiB, free: 434.3 MiB)
+24/04/27 13:14:37 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 129.82.44.141:48896
+24/04/27 13:14:37 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 23) in 136 ms on 129.82.44.141 (executor 10) (1/1)
+24/04/27 13:14:37 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool
+24/04/27 13:14:37 INFO DAGScheduler: ResultStage 5 (show at AggregateQueryRepository.scala:25) finished in 0.140 s
+24/04/27 13:14:37 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:37 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+24/04/27 13:14:37 INFO DAGScheduler: Job 3 finished: show at AggregateQueryRepository.scala:25, took 0.143460 s
+24/04/27 13:14:37 INFO CodeGenerator: Code generated in 4.676978 ms
+24/04/27 13:14:37 INFO CodeGenerator: Code generated in 4.178592 ms
++----+-----------+
+|Year|Crash_Count|
++----+-----------+
+|2016|      44297|
+|2017|      83786|
+|2018|     118950|
+|2019|     117762|
+|2020|      92092|
+|2021|     108764|
+|2022|     108403|
+|2023|     110712|
++----+-----------+
+
+Number of Crashes Per Day of the Week
+24/04/27 13:14:38 INFO FileSourceStrategy: Pushed Filters: IsNotNull(CRASH_DATE)
+24/04/27 13:14:38 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(CRASH_DATE#2),(substring(CRASH_DATE#2, 7, 4) >= 2016),(substring(CRASH_DATE#2, 7, 4) <= 2023)
+24/04/27 13:14:38 INFO CodeGenerator: Code generated in 12.279928 ms
+24/04/27 13:14:38 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 203.2 KiB, free 433.6 MiB)
+24/04/27 13:14:38 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 433.5 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO SparkContext: Created broadcast 6 from show at AggregateQueryRepository.scala:40
+24/04/27 13:14:38 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:38 INFO DAGScheduler: Registering RDD 18 (show at AggregateQueryRepository.scala:40) as input to shuffle 2
+24/04/27 13:14:38 INFO DAGScheduler: Got map stage job 4 (show at AggregateQueryRepository.scala:40) with 12 output partitions
+24/04/27 13:14:38 INFO DAGScheduler: Final stage: ShuffleMapStage 6 (show at AggregateQueryRepository.scala:40)
+24/04/27 13:14:38 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:38 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:38 INFO DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[18] at show at AggregateQueryRepository.scala:40), which has no missing parents
+24/04/27 13:14:38 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 43.2 KiB, free 433.5 MiB)
+24/04/27 13:14:38 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 20.5 KiB, free 433.5 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 20.5 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:38 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[18] at show at AggregateQueryRepository.scala:40) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:38 INFO TaskSchedulerImpl: Adding task set 6.0 with 12 tasks resource profile 0
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 24) (129.82.44.139, executor 7, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 1.0 in stage 6.0 (TID 25) (129.82.44.141, executor 10, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 2.0 in stage 6.0 (TID 26) (129.82.44.134, executor 3, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 3.0 in stage 6.0 (TID 27) (129.82.44.140, executor 4, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 4.0 in stage 6.0 (TID 28) (129.82.44.169, executor 0, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 5.0 in stage 6.0 (TID 29) (129.82.44.140, executor 8, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 6.0 in stage 6.0 (TID 30) (129.82.44.169, executor 9, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 7.0 in stage 6.0 (TID 31) (129.82.44.135, executor 11, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 8.0 in stage 6.0 (TID 32) (129.82.44.139, executor 5, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 9.0 in stage 6.0 (TID 33) (129.82.44.135, executor 1, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 10.0 in stage 6.0 (TID 34) (129.82.44.141, executor 2, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO TaskSetManager: Starting task 11.0 in stage 6.0 (TID 35) (129.82.44.134, executor 6, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.139:40523 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.169:37571 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.135:41385 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.135:40785 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.139:36603 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.141:45509 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.141:44111 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.169:37583 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.134:38603 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.134:36063 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.140:44927 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 129.82.44.140:44139 (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 8.0 in stage 6.0 (TID 32) in 213 ms on 129.82.44.139 (executor 5) (1/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 9.0 in stage 6.0 (TID 33) in 217 ms on 129.82.44.135 (executor 1) (2/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 11.0 in stage 6.0 (TID 35) in 229 ms on 129.82.44.134 (executor 6) (3/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 2.0 in stage 6.0 (TID 26) in 230 ms on 129.82.44.134 (executor 3) (4/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 1.0 in stage 6.0 (TID 25) in 246 ms on 129.82.44.141 (executor 10) (5/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 6.0 in stage 6.0 (TID 30) in 255 ms on 129.82.44.169 (executor 9) (6/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 7.0 in stage 6.0 (TID 31) in 256 ms on 129.82.44.135 (executor 11) (7/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 4.0 in stage 6.0 (TID 28) in 260 ms on 129.82.44.169 (executor 0) (8/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 5.0 in stage 6.0 (TID 29) in 587 ms on 129.82.44.140 (executor 8) (9/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 10.0 in stage 6.0 (TID 34) in 732 ms on 129.82.44.141 (executor 2) (10/12)
+24/04/27 13:14:38 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 24) in 737 ms on 129.82.44.139 (executor 7) (11/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 3.0 in stage 6.0 (TID 27) in 1132 ms on 129.82.44.140 (executor 4) (12/12)
+24/04/27 13:14:39 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool
+24/04/27 13:14:39 INFO DAGScheduler: ShuffleMapStage 6 (show at AggregateQueryRepository.scala:40) finished in 1.137 s
+24/04/27 13:14:39 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:39 INFO DAGScheduler: running: Set()
+24/04/27 13:14:39 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:39 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:39 INFO ShufflePartitionsUtil: For shuffle(2), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:39 INFO CodeGenerator: Code generated in 2.949527 ms
+24/04/27 13:14:39 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:39 INFO CodeGenerator: Code generated in 4.864408 ms
+24/04/27 13:14:39 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:40
+24/04/27 13:14:39 INFO DAGScheduler: Got job 5 (show at AggregateQueryRepository.scala:40) with 1 output partitions
+24/04/27 13:14:39 INFO DAGScheduler: Final stage: ResultStage 8 (show at AggregateQueryRepository.scala:40)
+24/04/27 13:14:39 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+24/04/27 13:14:39 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:39 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[22] at show at AggregateQueryRepository.scala:40), which has no missing parents
+24/04/27 13:14:39 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 46.3 KiB, free 433.4 MiB)
+24/04/27 13:14:39 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 22.1 KiB, free 433.4 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 22.1 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[22] at show at AggregateQueryRepository.scala:40) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:39 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks resource profile 0
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 36) (129.82.44.135, executor 11, partition 0, PROCESS_LOCAL, 7827 bytes)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 129.82.44.135:40785 (size: 22.1 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 129.82.44.135:45934
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 36) in 127 ms on 129.82.44.135 (executor 11) (1/1)
+24/04/27 13:14:39 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool
+24/04/27 13:14:39 INFO DAGScheduler: ResultStage 8 (show at AggregateQueryRepository.scala:40) finished in 0.132 s
+24/04/27 13:14:39 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:39 INFO TaskSchedulerImpl: Killing all running tasks in stage 8: Stage finished
+24/04/27 13:14:39 INFO DAGScheduler: Job 5 finished: show at AggregateQueryRepository.scala:40, took 0.135545 s
+24/04/27 13:14:39 INFO CodeGenerator: Code generated in 3.786268 ms
++-----------+-----------+
+|Day_of_Week|Crash_Count|
++-----------+-----------+
+|          6|     127693|
+|          7|     116223|
+|          5|     112678|
+|          3|     111746|
+|          4|     110946|
+|          2|     107803|
+|          1|      97677|
++-----------+-----------+
+
+Number of Crashes Per Hour of the Day (Ranked)
+24/04/27 13:14:39 INFO FileSourceStrategy: Pushed Filters:
+24/04/27 13:14:39 INFO FileSourceStrategy: Post-Scan Filters:
+24/04/27 13:14:39 INFO CodeGenerator: Code generated in 9.271798 ms
+24/04/27 13:14:39 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 203.2 KiB, free 433.2 MiB)
+24/04/27 13:14:39 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 433.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO SparkContext: Created broadcast 9 from show at AggregateQueryRepository.scala:58
+24/04/27 13:14:39 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:39 INFO DAGScheduler: Registering RDD 26 (show at AggregateQueryRepository.scala:58) as input to shuffle 3
+24/04/27 13:14:39 INFO DAGScheduler: Got map stage job 6 (show at AggregateQueryRepository.scala:58) with 12 output partitions
+24/04/27 13:14:39 INFO DAGScheduler: Final stage: ShuffleMapStage 9 (show at AggregateQueryRepository.scala:58)
+24/04/27 13:14:39 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:39 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:39 INFO DAGScheduler: Submitting ShuffleMapStage 9 (MapPartitionsRDD[26] at show at AggregateQueryRepository.scala:58), which has no missing parents
+24/04/27 13:14:39 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 40.2 KiB, free 433.1 MiB)
+24/04/27 13:14:39 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 19.3 KiB, free 433.1 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 19.3 KiB, free: 434.1 MiB)
+24/04/27 13:14:39 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:39 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 9 (MapPartitionsRDD[26] at show at AggregateQueryRepository.scala:58) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:39 INFO TaskSchedulerImpl: Adding task set 9.0 with 12 tasks resource profile 0
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 37) (129.82.44.141, executor 10, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 1.0 in stage 9.0 (TID 38) (129.82.44.140, executor 4, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 2.0 in stage 9.0 (TID 39) (129.82.44.141, executor 2, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 3.0 in stage 9.0 (TID 40) (129.82.44.134, executor 3, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 4.0 in stage 9.0 (TID 41) (129.82.44.140, executor 8, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 5.0 in stage 9.0 (TID 42) (129.82.44.139, executor 7, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 6.0 in stage 9.0 (TID 43) (129.82.44.135, executor 1, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 7.0 in stage 9.0 (TID 44) (129.82.44.139, executor 5, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 8.0 in stage 9.0 (TID 45) (129.82.44.169, executor 9, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 9.0 in stage 9.0 (TID 46) (129.82.44.169, executor 0, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 10.0 in stage 9.0 (TID 47) (129.82.44.134, executor 6, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO TaskSetManager: Starting task 11.0 in stage 9.0 (TID 48) (129.82.44.135, executor 11, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.141:45509 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.169:37583 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.169:37571 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.134:38603 (size: 19.3 KiB, free: 434.3 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.139:40523 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.139:36603 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.135:41385 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.135:40785 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.141:44111 (size: 19.3 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.134:36063 (size: 19.3 KiB, free: 434.3 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.140:44927 (size: 19.3 KiB, free: 434.3 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 129.82.44.140:44139 (size: 19.3 KiB, free: 434.3 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 10.0 in stage 9.0 (TID 47) in 149 ms on 129.82.44.134 (executor 6) (1/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 7.0 in stage 9.0 (TID 44) in 152 ms on 129.82.44.139 (executor 5) (2/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 5.0 in stage 9.0 (TID 42) in 154 ms on 129.82.44.139 (executor 7) (3/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 3.0 in stage 9.0 (TID 40) in 157 ms on 129.82.44.134 (executor 3) (4/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 11.0 in stage 9.0 (TID 48) in 173 ms on 129.82.44.135 (executor 11) (5/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 2.0 in stage 9.0 (TID 39) in 215 ms on 129.82.44.141 (executor 2) (6/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 37) in 261 ms on 129.82.44.141 (executor 10) (7/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 6.0 in stage 9.0 (TID 43) in 503 ms on 129.82.44.135 (executor 1) (8/12)
+24/04/27 13:14:39 INFO TaskSetManager: Finished task 9.0 in stage 9.0 (TID 46) in 517 ms on 129.82.44.169 (executor 0) (9/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 1.0 in stage 9.0 (TID 38) in 647 ms on 129.82.44.140 (executor 4) (10/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 8.0 in stage 9.0 (TID 45) in 697 ms on 129.82.44.169 (executor 9) (11/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 4.0 in stage 9.0 (TID 41) in 778 ms on 129.82.44.140 (executor 8) (12/12)
+24/04/27 13:14:40 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool
+24/04/27 13:14:40 INFO DAGScheduler: ShuffleMapStage 9 (show at AggregateQueryRepository.scala:58) finished in 0.784 s
+24/04/27 13:14:40 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:40 INFO DAGScheduler: running: Set()
+24/04/27 13:14:40 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:40 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:40 INFO ShufflePartitionsUtil: For shuffle(3), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:40 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:40 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:58
+24/04/27 13:14:40 INFO DAGScheduler: Got job 7 (show at AggregateQueryRepository.scala:58) with 1 output partitions
+24/04/27 13:14:40 INFO DAGScheduler: Final stage: ResultStage 11 (show at AggregateQueryRepository.scala:58)
+24/04/27 13:14:40 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+24/04/27 13:14:40 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:40 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[30] at show at AggregateQueryRepository.scala:58), which has no missing parents
+24/04/27 13:14:40 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 43.2 KiB, free 433.1 MiB)
+24/04/27 13:14:40 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 20.9 KiB, free 433.0 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 20.9 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:40 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[30] at show at AggregateQueryRepository.scala:58) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:40 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks resource profile 0
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 49) (129.82.44.135, executor 1, partition 0, PROCESS_LOCAL, 7827 bytes)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 129.82.44.135:41385 (size: 20.9 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 129.82.44.135:45944
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 49) in 115 ms on 129.82.44.135 (executor 1) (1/1)
+24/04/27 13:14:40 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool
+24/04/27 13:14:40 INFO DAGScheduler: ResultStage 11 (show at AggregateQueryRepository.scala:58) finished in 0.118 s
+24/04/27 13:14:40 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+24/04/27 13:14:40 INFO DAGScheduler: Job 7 finished: show at AggregateQueryRepository.scala:58, took 0.120803 s
++-----------+-----------+
+|Hour_of_Day|Crash_Count|
++-----------+-----------+
+|         15|      62502|
+|         16|      61861|
+|         17|      60338|
+|         14|      54249|
+|         18|      49755|
+|         13|      49166|
+|         12|      47534|
+|          8|      42773|
+|         11|      41077|
+|          9|      37156|
+|         10|      36851|
+|         19|      36749|
+|          7|      34189|
+|         20|      29609|
+|         21|      26444|
+|         22|      24323|
+|         23|      21087|
+|          6|      17620|
+|          0|      17580|
+|          1|      15062|
++-----------+-----------+
+only showing top 20 rows
+
+Number of Crashes Per Weather Condition
+24/04/27 13:14:40 INFO FileSourceStrategy: Pushed Filters: IsNotNull(WEATHER_CONDITION)
+24/04/27 13:14:40 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(WEATHER_CONDITION#6)
+24/04/27 13:14:40 INFO CodeGenerator: Code generated in 10.613114 ms
+24/04/27 13:14:40 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 203.2 KiB, free 432.8 MiB)
+24/04/27 13:14:40 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 432.8 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO SparkContext: Created broadcast 12 from show at AggregateQueryRepository.scala:82
+24/04/27 13:14:40 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:40 INFO DAGScheduler: Registering RDD 34 (show at AggregateQueryRepository.scala:82) as input to shuffle 4
+24/04/27 13:14:40 INFO DAGScheduler: Got map stage job 8 (show at AggregateQueryRepository.scala:82) with 12 output partitions
+24/04/27 13:14:40 INFO DAGScheduler: Final stage: ShuffleMapStage 12 (show at AggregateQueryRepository.scala:82)
+24/04/27 13:14:40 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:40 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:40 INFO DAGScheduler: Submitting ShuffleMapStage 12 (MapPartitionsRDD[34] at show at AggregateQueryRepository.scala:82), which has no missing parents
+24/04/27 13:14:40 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 41.4 KiB, free 432.8 MiB)
+24/04/27 13:14:40 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 19.7 KiB, free 432.7 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:40 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 12 (MapPartitionsRDD[34] at show at AggregateQueryRepository.scala:82) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:40 INFO TaskSchedulerImpl: Adding task set 12.0 with 12 tasks resource profile 0
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 50) (129.82.44.140, executor 4, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 1.0 in stage 12.0 (TID 51) (129.82.44.139, executor 5, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 2.0 in stage 12.0 (TID 52) (129.82.44.141, executor 10, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 3.0 in stage 12.0 (TID 53) (129.82.44.169, executor 0, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 4.0 in stage 12.0 (TID 54) (129.82.44.134, executor 3, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 5.0 in stage 12.0 (TID 55) (129.82.44.140, executor 8, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 6.0 in stage 12.0 (TID 56) (129.82.44.135, executor 1, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 7.0 in stage 12.0 (TID 57) (129.82.44.141, executor 2, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 8.0 in stage 12.0 (TID 58) (129.82.44.134, executor 6, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 9.0 in stage 12.0 (TID 59) (129.82.44.135, executor 11, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 10.0 in stage 12.0 (TID 60) (129.82.44.169, executor 9, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO TaskSetManager: Starting task 11.0 in stage 12.0 (TID 61) (129.82.44.139, executor 7, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.169:37583 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.139:40523 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.135:41385 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.139:36603 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.169:37571 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.135:40785 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.134:36063 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.134:38603 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.141:45509 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.141:44111 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.140:44927 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 129.82.44.140:44139 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 11.0 in stage 12.0 (TID 61) in 143 ms on 129.82.44.139 (executor 7) (1/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 9.0 in stage 12.0 (TID 59) in 160 ms on 129.82.44.135 (executor 11) (2/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 3.0 in stage 12.0 (TID 53) in 164 ms on 129.82.44.169 (executor 0) (3/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 2.0 in stage 12.0 (TID 52) in 168 ms on 129.82.44.141 (executor 10) (4/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 8.0 in stage 12.0 (TID 58) in 205 ms on 129.82.44.134 (executor 6) (5/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 4.0 in stage 12.0 (TID 54) in 222 ms on 129.82.44.134 (executor 3) (6/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 10.0 in stage 12.0 (TID 60) in 373 ms on 129.82.44.169 (executor 9) (7/12)
+24/04/27 13:14:40 INFO TaskSetManager: Finished task 6.0 in stage 12.0 (TID 56) in 388 ms on 129.82.44.135 (executor 1) (8/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 5.0 in stage 12.0 (TID 55) in 742 ms on 129.82.44.140 (executor 8) (9/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 1.0 in stage 12.0 (TID 51) in 757 ms on 129.82.44.139 (executor 5) (10/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 50) in 771 ms on 129.82.44.140 (executor 4) (11/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 7.0 in stage 12.0 (TID 57) in 830 ms on 129.82.44.141 (executor 2) (12/12)
+24/04/27 13:14:41 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool
+24/04/27 13:14:41 INFO DAGScheduler: ShuffleMapStage 12 (show at AggregateQueryRepository.scala:82) finished in 0.835 s
+24/04/27 13:14:41 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:41 INFO DAGScheduler: running: Set()
+24/04/27 13:14:41 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:41 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:41 INFO ShufflePartitionsUtil: For shuffle(4), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:41 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:41 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:82
+24/04/27 13:14:41 INFO DAGScheduler: Got job 9 (show at AggregateQueryRepository.scala:82) with 1 output partitions
+24/04/27 13:14:41 INFO DAGScheduler: Final stage: ResultStage 14 (show at AggregateQueryRepository.scala:82)
+24/04/27 13:14:41 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 13)
+24/04/27 13:14:41 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:41 INFO DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[38] at show at AggregateQueryRepository.scala:82), which has no missing parents
+24/04/27 13:14:41 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 44.1 KiB, free 432.7 MiB)
+24/04/27 13:14:41 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 21.2 KiB, free 432.7 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 21.2 KiB, free: 434.0 MiB)
+24/04/27 13:14:41 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[38] at show at AggregateQueryRepository.scala:82) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:41 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks resource profile 0
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 62) (129.82.44.169, executor 0, partition 0, NODE_LOCAL, 7827 bytes)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 129.82.44.169:37583 (size: 21.2 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 4 to 129.82.44.169:44872
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 62) in 130 ms on 129.82.44.169 (executor 0) (1/1)
+24/04/27 13:14:41 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool
+24/04/27 13:14:41 INFO DAGScheduler: ResultStage 14 (show at AggregateQueryRepository.scala:82) finished in 0.133 s
+24/04/27 13:14:41 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:41 INFO TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+24/04/27 13:14:41 INFO DAGScheduler: Job 9 finished: show at AggregateQueryRepository.scala:82, took 0.135208 s
++--------------------+-----------+
+|   WEATHER_CONDITION|Crash_Count|
++--------------------+-----------+
+|               CLEAR|     635214|
+|                RAIN|      70832|
+|             UNKNOWN|      44582|
+|                SNOW|      28224|
+|     CLOUDY/OVERCAST|      24006|
+|               OTHER|       2584|
+|FREEZING RAIN/DRI...|       1688|
+|      FOG/SMOKE/HAZE|       1336|
+|          SLEET/HAIL|       1000|
+|        BLOWING SNOW|        440|
+|SEVERE CROSS WIND...|        153|
+|BLOWING SAND, SOI...|          7|
++--------------------+-----------+
+
+Number of Crashes Per First Crash Type
+24/04/27 13:14:41 INFO FileSourceStrategy: Pushed Filters: IsNotNull(CRASH_TYPE)
+24/04/27 13:14:41 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(CRASH_TYPE#15)
+24/04/27 13:14:41 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 203.2 KiB, free 432.5 MiB)
+24/04/27 13:14:41 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 432.4 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:41 INFO SparkContext: Created broadcast 15 from show at AggregateQueryRepository.scala:103
+24/04/27 13:14:41 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:41 INFO DAGScheduler: Registering RDD 42 (show at AggregateQueryRepository.scala:103) as input to shuffle 5
+24/04/27 13:14:41 INFO DAGScheduler: Got map stage job 10 (show at AggregateQueryRepository.scala:103) with 12 output partitions
+24/04/27 13:14:41 INFO DAGScheduler: Final stage: ShuffleMapStage 15 (show at AggregateQueryRepository.scala:103)
+24/04/27 13:14:41 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:41 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:41 INFO DAGScheduler: Submitting ShuffleMapStage 15 (MapPartitionsRDD[42] at show at AggregateQueryRepository.scala:103), which has no missing parents
+24/04/27 13:14:41 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 41.3 KiB, free 432.4 MiB)
+24/04/27 13:14:41 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 19.7 KiB, free 432.4 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:41 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:41 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 15 (MapPartitionsRDD[42] at show at AggregateQueryRepository.scala:103) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:41 INFO TaskSchedulerImpl: Adding task set 15.0 with 12 tasks resource profile 0
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 63) (129.82.44.169, executor 0, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 1.0 in stage 15.0 (TID 64) (129.82.44.169, executor 9, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 2.0 in stage 15.0 (TID 65) (129.82.44.139, executor 7, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 3.0 in stage 15.0 (TID 66) (129.82.44.134, executor 6, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 4.0 in stage 15.0 (TID 67) (129.82.44.135, executor 11, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 5.0 in stage 15.0 (TID 68) (129.82.44.140, executor 8, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 6.0 in stage 15.0 (TID 69) (129.82.44.141, executor 10, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 7.0 in stage 15.0 (TID 70) (129.82.44.140, executor 4, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 8.0 in stage 15.0 (TID 71) (129.82.44.139, executor 5, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 9.0 in stage 15.0 (TID 72) (129.82.44.135, executor 1, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 10.0 in stage 15.0 (TID 73) (129.82.44.141, executor 2, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO TaskSetManager: Starting task 11.0 in stage 15.0 (TID 74) (129.82.44.134, executor 3, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.169:37583 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.135:40785 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.169:37571 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.134:38603 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.134:36063 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.141:44111 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.139:40523 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.135:41385 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.139:36603 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.141:45509 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.140:44139 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 129.82.44.140:44927 (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 11.0 in stage 15.0 (TID 74) in 117 ms on 129.82.44.134 (executor 3) (1/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 3.0 in stage 15.0 (TID 66) in 135 ms on 129.82.44.134 (executor 6) (2/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 9.0 in stage 15.0 (TID 72) in 141 ms on 129.82.44.135 (executor 1) (3/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 63) in 163 ms on 129.82.44.169 (executor 0) (4/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 8.0 in stage 15.0 (TID 71) in 175 ms on 129.82.44.139 (executor 5) (5/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 1.0 in stage 15.0 (TID 64) in 179 ms on 129.82.44.169 (executor 9) (6/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 2.0 in stage 15.0 (TID 65) in 370 ms on 129.82.44.139 (executor 7) (7/12)
+24/04/27 13:14:41 INFO TaskSetManager: Finished task 6.0 in stage 15.0 (TID 69) in 379 ms on 129.82.44.141 (executor 10) (8/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 7.0 in stage 15.0 (TID 70) in 766 ms on 129.82.44.140 (executor 4) (9/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 4.0 in stage 15.0 (TID 67) in 893 ms on 129.82.44.135 (executor 11) (10/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 5.0 in stage 15.0 (TID 68) in 1023 ms on 129.82.44.140 (executor 8) (11/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 10.0 in stage 15.0 (TID 73) in 1080 ms on 129.82.44.141 (executor 2) (12/12)
+24/04/27 13:14:42 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool
+24/04/27 13:14:42 INFO DAGScheduler: ShuffleMapStage 15 (show at AggregateQueryRepository.scala:103) finished in 1.084 s
+24/04/27 13:14:42 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:42 INFO DAGScheduler: running: Set()
+24/04/27 13:14:42 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:42 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:42 INFO ShufflePartitionsUtil: For shuffle(5), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:42 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:42 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:103
+24/04/27 13:14:42 INFO DAGScheduler: Got job 11 (show at AggregateQueryRepository.scala:103) with 1 output partitions
+24/04/27 13:14:42 INFO DAGScheduler: Final stage: ResultStage 17 (show at AggregateQueryRepository.scala:103)
+24/04/27 13:14:42 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 16)
+24/04/27 13:14:42 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:42 INFO DAGScheduler: Submitting ResultStage 17 (MapPartitionsRDD[46] at show at AggregateQueryRepository.scala:103), which has no missing parents
+24/04/27 13:14:42 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 44.1 KiB, free 432.3 MiB)
+24/04/27 13:14:42 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 21.2 KiB, free 432.3 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 21.2 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 17 (MapPartitionsRDD[46] at show at AggregateQueryRepository.scala:103) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:42 INFO TaskSchedulerImpl: Adding task set 17.0 with 1 tasks resource profile 0
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 75) (129.82.44.139, executor 5, partition 0, PROCESS_LOCAL, 7827 bytes)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 129.82.44.139:40523 (size: 21.2 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 5 to 129.82.44.139:51658
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 75) in 56 ms on 129.82.44.139 (executor 5) (1/1)
+24/04/27 13:14:42 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool
+24/04/27 13:14:42 INFO DAGScheduler: ResultStage 17 (show at AggregateQueryRepository.scala:103) finished in 0.060 s
+24/04/27 13:14:42 INFO DAGScheduler: Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:42 INFO TaskSchedulerImpl: Killing all running tasks in stage 17: Stage finished
+24/04/27 13:14:42 INFO DAGScheduler: Job 11 finished: show at AggregateQueryRepository.scala:103, took 0.062102 s
++--------------------+-----------+
+|          CRASH_TYPE|Crash_Count|
++--------------------+-----------+
+|NO INJURY / DRIVE...|     593925|
+|INJURY AND / OR T...|     216141|
++--------------------+-----------+
+
+Number of Crashes Per First Crash Type
+24/04/27 13:14:42 INFO FileSourceStrategy: Pushed Filters: IsNotNull(ROAD_DEFECT)
+24/04/27 13:14:42 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(ROAD_DEFECT#13)
+24/04/27 13:14:42 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 203.2 KiB, free 432.1 MiB)
+24/04/27 13:14:42 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 432.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 433.9 MiB)
+24/04/27 13:14:42 INFO SparkContext: Created broadcast 18 from show at AggregateQueryRepository.scala:124
+24/04/27 13:14:42 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:42 INFO DAGScheduler: Registering RDD 50 (show at AggregateQueryRepository.scala:124) as input to shuffle 6
+24/04/27 13:14:42 INFO DAGScheduler: Got map stage job 12 (show at AggregateQueryRepository.scala:124) with 12 output partitions
+24/04/27 13:14:42 INFO DAGScheduler: Final stage: ShuffleMapStage 18 (show at AggregateQueryRepository.scala:124)
+24/04/27 13:14:42 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:42 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:42 INFO DAGScheduler: Submitting ShuffleMapStage 18 (MapPartitionsRDD[50] at show at AggregateQueryRepository.scala:124), which has no missing parents
+24/04/27 13:14:42 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 41.4 KiB, free 432.1 MiB)
+24/04/27 13:14:42 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 19.7 KiB, free 432.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 19.7 KiB, free: 433.9 MiB)
+24/04/27 13:14:42 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:42 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 18 (MapPartitionsRDD[50] at show at AggregateQueryRepository.scala:124) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:42 INFO TaskSchedulerImpl: Adding task set 18.0 with 12 tasks resource profile 0
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 76) (129.82.44.139, executor 5, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 1.0 in stage 18.0 (TID 77) (129.82.44.169, executor 0, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 2.0 in stage 18.0 (TID 78) (129.82.44.135, executor 1, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 3.0 in stage 18.0 (TID 79) (129.82.44.135, executor 11, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 4.0 in stage 18.0 (TID 80) (129.82.44.134, executor 3, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 5.0 in stage 18.0 (TID 81) (129.82.44.169, executor 9, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 6.0 in stage 18.0 (TID 82) (129.82.44.134, executor 6, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 7.0 in stage 18.0 (TID 83) (129.82.44.140, executor 4, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 8.0 in stage 18.0 (TID 84) (129.82.44.139, executor 7, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 9.0 in stage 18.0 (TID 85) (129.82.44.141, executor 10, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 10.0 in stage 18.0 (TID 86) (129.82.44.140, executor 8, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO TaskSetManager: Starting task 11.0 in stage 18.0 (TID 87) (129.82.44.141, executor 2, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.139:40523 (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.169:37571 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.135:40785 (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.169:37583 (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.139:36603 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.141:44111 (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.134:36063 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.141:45509 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.134:38603 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.135:41385 (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.140:44139 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 129.82.44.140:44927 (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 1.0 in stage 18.0 (TID 77) in 137 ms on 129.82.44.169 (executor 0) (1/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 4.0 in stage 18.0 (TID 80) in 138 ms on 129.82.44.134 (executor 3) (2/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 6.0 in stage 18.0 (TID 82) in 149 ms on 129.82.44.134 (executor 6) (3/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 5.0 in stage 18.0 (TID 81) in 154 ms on 129.82.44.169 (executor 9) (4/12)
+24/04/27 13:14:42 INFO TaskSetManager: Finished task 8.0 in stage 18.0 (TID 84) in 160 ms on 129.82.44.139 (executor 7) (5/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 11.0 in stage 18.0 (TID 87) in 476 ms on 129.82.44.141 (executor 2) (6/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 10.0 in stage 18.0 (TID 86) in 527 ms on 129.82.44.140 (executor 8) (7/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 76) in 624 ms on 129.82.44.139 (executor 5) (8/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 2.0 in stage 18.0 (TID 78) in 707 ms on 129.82.44.135 (executor 1) (9/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 3.0 in stage 18.0 (TID 79) in 720 ms on 129.82.44.135 (executor 11) (10/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 9.0 in stage 18.0 (TID 85) in 791 ms on 129.82.44.141 (executor 10) (11/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 7.0 in stage 18.0 (TID 83) in 967 ms on 129.82.44.140 (executor 4) (12/12)
+24/04/27 13:14:43 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool
+24/04/27 13:14:43 INFO DAGScheduler: ShuffleMapStage 18 (show at AggregateQueryRepository.scala:124) finished in 0.970 s
+24/04/27 13:14:43 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:43 INFO DAGScheduler: running: Set()
+24/04/27 13:14:43 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:43 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:43 INFO ShufflePartitionsUtil: For shuffle(6), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:43 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:43 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:124
+24/04/27 13:14:43 INFO DAGScheduler: Got job 13 (show at AggregateQueryRepository.scala:124) with 1 output partitions
+24/04/27 13:14:43 INFO DAGScheduler: Final stage: ResultStage 20 (show at AggregateQueryRepository.scala:124)
+24/04/27 13:14:43 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 19)
+24/04/27 13:14:43 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:43 INFO DAGScheduler: Submitting ResultStage 20 (MapPartitionsRDD[54] at show at AggregateQueryRepository.scala:124), which has no missing parents
+24/04/27 13:14:43 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 44.1 KiB, free 432.0 MiB)
+24/04/27 13:14:43 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 21.2 KiB, free 432.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 21.2 KiB, free: 433.9 MiB)
+24/04/27 13:14:43 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 20 (MapPartitionsRDD[54] at show at AggregateQueryRepository.scala:124) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:43 INFO TaskSchedulerImpl: Adding task set 20.0 with 1 tasks resource profile 0
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 0.0 in stage 20.0 (TID 88) (129.82.44.135, executor 11, partition 0, PROCESS_LOCAL, 7827 bytes)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 129.82.44.135:40785 (size: 21.2 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 6 to 129.82.44.135:45934
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 0.0 in stage 20.0 (TID 88) in 25 ms on 129.82.44.135 (executor 11) (1/1)
+24/04/27 13:14:43 INFO TaskSchedulerImpl: Removed TaskSet 20.0, whose tasks have all completed, from pool
+24/04/27 13:14:43 INFO DAGScheduler: ResultStage 20 (show at AggregateQueryRepository.scala:124) finished in 0.028 s
+24/04/27 13:14:43 INFO DAGScheduler: Job 13 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:43 INFO TaskSchedulerImpl: Killing all running tasks in stage 20: Stage finished
+24/04/27 13:14:43 INFO DAGScheduler: Job 13 finished: show at AggregateQueryRepository.scala:124, took 0.029130 s
++-----------------+-----------+
+|      ROAD_DEFECT|Crash_Count|
++-----------------+-----------+
+|       NO DEFECTS|     651789|
+|          UNKNOWN|     142419|
+|       RUT, HOLES|       6033|
+|            OTHER|       4424|
+|     WORN SURFACE|       3316|
+|  SHOULDER DEFECT|       1472|
+|DEBRIS ON ROADWAY|        613|
++-----------------+-----------+
+
+Number of Crashes per injury type
+24/04/27 13:14:43 INFO FileSourceStrategy: Pushed Filters: IsNotNull(MOST_SEVERE_INJURY)
+24/04/27 13:14:43 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(MOST_SEVERE_INJURY#34)
+24/04/27 13:14:43 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 203.2 KiB, free 431.8 MiB)
+24/04/27 13:14:43 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 431.7 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 433.9 MiB)
+24/04/27 13:14:43 INFO SparkContext: Created broadcast 21 from show at AggregateQueryRepository.scala:147
+24/04/27 13:14:43 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:43 INFO DAGScheduler: Registering RDD 58 (show at AggregateQueryRepository.scala:147) as input to shuffle 7
+24/04/27 13:14:43 INFO DAGScheduler: Got map stage job 14 (show at AggregateQueryRepository.scala:147) with 12 output partitions
+24/04/27 13:14:43 INFO DAGScheduler: Final stage: ShuffleMapStage 21 (show at AggregateQueryRepository.scala:147)
+24/04/27 13:14:43 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:43 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:43 INFO DAGScheduler: Submitting ShuffleMapStage 21 (MapPartitionsRDD[58] at show at AggregateQueryRepository.scala:147), which has no missing parents
+24/04/27 13:14:43 INFO MemoryStore: Block broadcast_22 stored as values in memory (estimated size 41.4 KiB, free 431.7 MiB)
+24/04/27 13:14:43 INFO MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 19.8 KiB, free 431.7 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 19.8 KiB, free: 433.8 MiB)
+24/04/27 13:14:43 INFO SparkContext: Created broadcast 22 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:43 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 21 (MapPartitionsRDD[58] at show at AggregateQueryRepository.scala:147) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:43 INFO TaskSchedulerImpl: Adding task set 21.0 with 12 tasks resource profile 0
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 0.0 in stage 21.0 (TID 89) (129.82.44.141, executor 2, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 1.0 in stage 21.0 (TID 90) (129.82.44.135, executor 1, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 2.0 in stage 21.0 (TID 91) (129.82.44.134, executor 6, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 3.0 in stage 21.0 (TID 92) (129.82.44.169, executor 9, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 4.0 in stage 21.0 (TID 93) (129.82.44.134, executor 3, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 5.0 in stage 21.0 (TID 94) (129.82.44.135, executor 11, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 6.0 in stage 21.0 (TID 95) (129.82.44.140, executor 4, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 7.0 in stage 21.0 (TID 96) (129.82.44.139, executor 5, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 8.0 in stage 21.0 (TID 97) (129.82.44.169, executor 0, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 9.0 in stage 21.0 (TID 98) (129.82.44.141, executor 10, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 10.0 in stage 21.0 (TID 99) (129.82.44.140, executor 8, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO TaskSetManager: Starting task 11.0 in stage 21.0 (TID 100) (129.82.44.139, executor 7, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 19.3 KiB, free: 433.9 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.141:45509 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.141:44111 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.135:40785 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.135:41385 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.169:37571 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.134:38603 in memory (size: 19.3 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.169:37583 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.139:36603 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.134:36063 in memory (size: 19.3 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.139:40523 in memory (size: 19.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.141:45509 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.139:40523 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.135:41385 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.135:40785 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.169:37571 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.139:36603 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.141:44111 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.134:36063 (size: 19.8 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.134:38603 (size: 19.8 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.140:44139 in memory (size: 19.3 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.169:37583 (size: 19.8 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 129.82.44.140:44927 in memory (size: 19.3 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_2_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 5.9 KiB, free: 433.9 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.140:44927 (size: 19.8 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 129.82.44.140:44139 (size: 19.8 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 129.82.44.139:40523 in memory (size: 5.9 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 19.7 KiB, free: 433.9 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.139:40523 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.141:45509 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.134:38603 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.135:40785 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.135:41385 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.139:36603 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.141:44111 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.169:37571 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.134:36063 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.140:44139 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.140:44927 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 129.82.44.169:37583 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_20_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 21.2 KiB, free: 433.9 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_20_piece0 on 129.82.44.135:40785 in memory (size: 21.2 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 35.6 KiB, free: 433.9 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.139:40523 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.139:36603 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.169:37583 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.134:38603 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.169:37571 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.134:36063 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.141:45509 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.141:44111 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.135:40785 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.135:41385 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.140:44927 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 129.82.44.140:44139 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 9.9 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.139:40523 in memory (size: 9.9 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.139:36603 in memory (size: 9.9 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.141:45509 in memory (size: 9.9 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.169:37583 in memory (size: 9.9 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.141:44111 in memory (size: 9.9 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.169:37571 in memory (size: 9.9 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.135:40785 in memory (size: 9.9 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 129.82.44.135:41385 in memory (size: 9.9 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 35.6 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.141:45509 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.141:44111 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.139:36603 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.134:38603 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.134:36063 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.139:40523 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.169:37571 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.169:37583 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.135:40785 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.135:41385 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.140:44139 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 129.82.44.140:44927 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 19.7 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.141:45509 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.134:38603 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.139:40523 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.169:37583 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.141:44111 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.139:36603 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.134:36063 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.169:37571 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.135:41385 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.135:40785 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.140:44139 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 129.82.44.140:44927 in memory (size: 19.7 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_5_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 22.3 KiB, free: 434.0 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 129.82.44.141:44111 in memory (size: 22.3 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.169:37583 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.139:40523 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.139:36603 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.169:37571 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.141:45509 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.141:44111 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.134:38603 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.134:36063 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.135:40785 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.140:44927 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.140:44139 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 129.82.44.135:41385 in memory (size: 35.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 20.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.141:45509 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.134:38603 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.134:36063 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.139:40523 in memory (size: 20.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.139:36603 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.141:44111 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.169:37583 in memory (size: 20.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.169:37571 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.140:44139 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.140:44927 in memory (size: 20.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.135:40785 in memory (size: 20.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 129.82.44.135:41385 in memory (size: 20.6 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_17_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 21.2 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_17_piece0 on 129.82.44.139:40523 in memory (size: 21.2 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_8_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 22.1 KiB, free: 434.1 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 129.82.44.135:40785 in memory (size: 22.1 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.139:40523 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.139:36603 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.169:37583 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.169:37571 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.141:44111 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.141:45509 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.135:40785 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 129.82.44.135:41385 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.134:38603 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.134:36063 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.141:44111 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.139:36603 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.139:40523 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.169:37571 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.169:37583 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.141:45509 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.140:44927 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.140:44139 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.135:40785 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 129.82.44.135:41385 in memory (size: 19.7 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_11_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 20.9 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 129.82.44.135:41385 in memory (size: 20.9 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 11.0 in stage 21.0 (TID 100) in 124 ms on 129.82.44.139 (executor 7) (1/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 4.0 in stage 21.0 (TID 93) in 131 ms on 129.82.44.134 (executor 3) (2/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 2.0 in stage 21.0 (TID 91) in 135 ms on 129.82.44.134 (executor 6) (3/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 7.0 in stage 21.0 (TID 96) in 136 ms on 129.82.44.139 (executor 5) (4/12)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.139:40523 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.134:36063 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.134:38603 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.139:36603 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.169:37583 in memory (size: 35.6 KiB, free: 434.2 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.141:44111 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.141:45509 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.169:37571 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.135:40785 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.135:41385 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.140:44139 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 129.82.44.140:44927 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 0.0 in stage 21.0 (TID 89) in 150 ms on 129.82.44.141 (executor 2) (5/12)
+24/04/27 13:14:43 INFO TaskSetManager: Finished task 3.0 in stage 21.0 (TID 92) in 151 ms on 129.82.44.169 (executor 9) (6/12)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_14_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 21.2 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 129.82.44.169:37583 in memory (size: 21.2 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.169:37583 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.139:36603 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.139:40523 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.134:36063 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.134:38603 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.141:44111 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.141:45509 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.169:37571 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.135:41385 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.135:40785 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.140:44927 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 129.82.44.140:44139 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.169:37583 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.139:40523 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.141:45509 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.169:37571 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.139:36603 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.134:36063 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.141:44111 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.134:38603 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.135:40785 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.135:41385 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.140:44927 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 129.82.44.140:44139 in memory (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on charleston.cs.colostate.edu:39973 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.139:40523 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.139:36603 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.169:37583 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.141:45509 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.141:44111 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.134:36063 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.134:38603 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.169:37571 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.135:41385 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.135:40785 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.140:44139 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 129.82.44.140:44927 in memory (size: 20.5 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 10.0 in stage 21.0 (TID 99) in 537 ms on 129.82.44.140 (executor 8) (7/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 1.0 in stage 21.0 (TID 90) in 587 ms on 129.82.44.135 (executor 1) (8/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 5.0 in stage 21.0 (TID 94) in 675 ms on 129.82.44.135 (executor 11) (9/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 8.0 in stage 21.0 (TID 97) in 749 ms on 129.82.44.169 (executor 0) (10/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 9.0 in stage 21.0 (TID 98) in 760 ms on 129.82.44.141 (executor 10) (11/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 6.0 in stage 21.0 (TID 95) in 834 ms on 129.82.44.140 (executor 4) (12/12)
+24/04/27 13:14:44 INFO TaskSchedulerImpl: Removed TaskSet 21.0, whose tasks have all completed, from pool
+24/04/27 13:14:44 INFO DAGScheduler: ShuffleMapStage 21 (show at AggregateQueryRepository.scala:147) finished in 0.841 s
+24/04/27 13:14:44 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:44 INFO DAGScheduler: running: Set()
+24/04/27 13:14:44 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:44 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:44 INFO ShufflePartitionsUtil: For shuffle(7), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:44 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:44 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:147
+24/04/27 13:14:44 INFO DAGScheduler: Got job 15 (show at AggregateQueryRepository.scala:147) with 1 output partitions
+24/04/27 13:14:44 INFO DAGScheduler: Final stage: ResultStage 23 (show at AggregateQueryRepository.scala:147)
+24/04/27 13:14:44 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 22)
+24/04/27 13:14:44 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:44 INFO DAGScheduler: Submitting ResultStage 23 (MapPartitionsRDD[62] at show at AggregateQueryRepository.scala:147), which has no missing parents
+24/04/27 13:14:44 INFO MemoryStore: Block broadcast_23 stored as values in memory (estimated size 44.1 KiB, free 434.1 MiB)
+24/04/27 13:14:44 INFO MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 21.2 KiB, free 434.0 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 21.2 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 23 (MapPartitionsRDD[62] at show at AggregateQueryRepository.scala:147) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:44 INFO TaskSchedulerImpl: Adding task set 23.0 with 1 tasks resource profile 0
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 0.0 in stage 23.0 (TID 101) (129.82.44.140, executor 4, partition 0, PROCESS_LOCAL, 7827 bytes)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on 129.82.44.140:44927 (size: 21.2 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 7 to 129.82.44.140:35166
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 0.0 in stage 23.0 (TID 101) in 141 ms on 129.82.44.140 (executor 4) (1/1)
+24/04/27 13:14:44 INFO TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool
+24/04/27 13:14:44 INFO DAGScheduler: ResultStage 23 (show at AggregateQueryRepository.scala:147) finished in 0.145 s
+24/04/27 13:14:44 INFO DAGScheduler: Job 15 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:44 INFO TaskSchedulerImpl: Killing all running tasks in stage 23: Stage finished
+24/04/27 13:14:44 INFO DAGScheduler: Job 15 finished: show at AggregateQueryRepository.scala:147, took 0.145830 s
++--------------------+-----------+
+|  MOST_SEVERE_INJURY|Crash_Count|
++--------------------+-----------+
+|NO INDICATION OF ...|     696960|
+|NONINCAPACITATING...|      62839|
+|REPORTED, NOT EVI...|      33876|
+|INCAPACITATING IN...|      13723|
+|               FATAL|        888|
++--------------------+-----------+
+
+Number of Crashes Per contributory cause
+24/04/27 13:14:44 INFO FileSourceStrategy: Pushed Filters: IsNotNull(PRIM_CONTRIBUTORY_CAUSE)
+24/04/27 13:14:44 INFO FileSourceStrategy: Post-Scan Filters: isnotnull(PRIM_CONTRIBUTORY_CAUSE#21)
+24/04/27 13:14:44 INFO MemoryStore: Block broadcast_24 stored as values in memory (estimated size 203.2 KiB, free 433.8 MiB)
+24/04/27 13:14:44 INFO MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 35.6 KiB, free 433.8 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO SparkContext: Created broadcast 24 from show at AggregateQueryRepository.scala:168
+24/04/27 13:14:44 INFO FileSourceScanExec: Planning scan with bin packing, max size: 36911553 bytes, open cost is considered as scanning 4194304 bytes.
+24/04/27 13:14:44 INFO DAGScheduler: Registering RDD 66 (show at AggregateQueryRepository.scala:168) as input to shuffle 8
+24/04/27 13:14:44 INFO DAGScheduler: Got map stage job 16 (show at AggregateQueryRepository.scala:168) with 12 output partitions
+24/04/27 13:14:44 INFO DAGScheduler: Final stage: ShuffleMapStage 24 (show at AggregateQueryRepository.scala:168)
+24/04/27 13:14:44 INFO DAGScheduler: Parents of final stage: List()
+24/04/27 13:14:44 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:44 INFO DAGScheduler: Submitting ShuffleMapStage 24 (MapPartitionsRDD[66] at show at AggregateQueryRepository.scala:168), which has no missing parents
+24/04/27 13:14:44 INFO MemoryStore: Block broadcast_25 stored as values in memory (estimated size 41.4 KiB, free 433.8 MiB)
+24/04/27 13:14:44 INFO MemoryStore: Block broadcast_25_piece0 stored as bytes in memory (estimated size 19.8 KiB, free 433.8 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO SparkContext: Created broadcast 25 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:44 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 24 (MapPartitionsRDD[66] at show at AggregateQueryRepository.scala:168) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11))
+24/04/27 13:14:44 INFO TaskSchedulerImpl: Adding task set 24.0 with 12 tasks resource profile 0
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 0.0 in stage 24.0 (TID 102) (129.82.44.169, executor 9, partition 0, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 1.0 in stage 24.0 (TID 103) (129.82.44.169, executor 0, partition 1, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 2.0 in stage 24.0 (TID 104) (129.82.44.140, executor 4, partition 2, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 3.0 in stage 24.0 (TID 105) (129.82.44.135, executor 11, partition 3, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 4.0 in stage 24.0 (TID 106) (129.82.44.139, executor 5, partition 4, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 5.0 in stage 24.0 (TID 107) (129.82.44.134, executor 3, partition 5, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 6.0 in stage 24.0 (TID 108) (129.82.44.141, executor 10, partition 6, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 7.0 in stage 24.0 (TID 109) (129.82.44.140, executor 8, partition 7, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 8.0 in stage 24.0 (TID 110) (129.82.44.135, executor 1, partition 8, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 9.0 in stage 24.0 (TID 111) (129.82.44.134, executor 6, partition 9, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 10.0 in stage 24.0 (TID 112) (129.82.44.139, executor 7, partition 10, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO TaskSetManager: Starting task 11.0 in stage 24.0 (TID 113) (129.82.44.141, executor 2, partition 11, ANY, 8447 bytes)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.169:37583 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.169:37571 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.139:40523 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.135:40785 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.141:45509 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.134:38603 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.141:44111 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.139:36603 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.135:41385 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.134:36063 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.139:40523 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.140:44927 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.135:40785 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.139:36603 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.169:37571 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.134:38603 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.141:45509 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.141:44111 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.135:41385 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.169:37583 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.134:36063 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 129.82.44.140:44139 (size: 19.8 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.140:44927 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 129.82.44.140:44139 (size: 35.6 KiB, free: 434.3 MiB)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 10.0 in stage 24.0 (TID 112) in 124 ms on 129.82.44.139 (executor 7) (1/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 9.0 in stage 24.0 (TID 111) in 128 ms on 129.82.44.134 (executor 6) (2/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 4.0 in stage 24.0 (TID 106) in 129 ms on 129.82.44.139 (executor 5) (3/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 1.0 in stage 24.0 (TID 103) in 132 ms on 129.82.44.169 (executor 0) (4/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 5.0 in stage 24.0 (TID 107) in 132 ms on 129.82.44.134 (executor 3) (5/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 8.0 in stage 24.0 (TID 110) in 133 ms on 129.82.44.135 (executor 1) (6/12)
+24/04/27 13:14:44 INFO TaskSetManager: Finished task 0.0 in stage 24.0 (TID 102) in 136 ms on 129.82.44.169 (executor 9) (7/12)
+24/04/27 13:14:45 INFO TaskSetManager: Finished task 11.0 in stage 24.0 (TID 113) in 389 ms on 129.82.44.141 (executor 2) (8/12)
+24/04/27 13:14:45 INFO TaskSetManager: Finished task 2.0 in stage 24.0 (TID 104) in 502 ms on 129.82.44.140 (executor 4) (9/12)
+24/04/27 13:14:45 INFO TaskSetManager: Finished task 3.0 in stage 24.0 (TID 105) in 543 ms on 129.82.44.135 (executor 11) (10/12)
+24/04/27 13:14:45 INFO TaskSetManager: Finished task 6.0 in stage 24.0 (TID 108) in 811 ms on 129.82.44.141 (executor 10) (11/12)
+24/04/27 13:14:45 INFO TaskSetManager: Finished task 7.0 in stage 24.0 (TID 109) in 895 ms on 129.82.44.140 (executor 8) (12/12)
+24/04/27 13:14:45 INFO TaskSchedulerImpl: Removed TaskSet 24.0, whose tasks have all completed, from pool
+24/04/27 13:14:45 INFO DAGScheduler: ShuffleMapStage 24 (show at AggregateQueryRepository.scala:168) finished in 0.898 s
+24/04/27 13:14:45 INFO DAGScheduler: looking for newly runnable stages
+24/04/27 13:14:45 INFO DAGScheduler: running: Set()
+24/04/27 13:14:45 INFO DAGScheduler: waiting: Set()
+24/04/27 13:14:45 INFO DAGScheduler: failed: Set()
+24/04/27 13:14:45 INFO ShufflePartitionsUtil: For shuffle(8), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+24/04/27 13:14:45 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+24/04/27 13:14:45 INFO SparkContext: Starting job: show at AggregateQueryRepository.scala:168
+24/04/27 13:14:45 INFO DAGScheduler: Got job 17 (show at AggregateQueryRepository.scala:168) with 1 output partitions
+24/04/27 13:14:45 INFO DAGScheduler: Final stage: ResultStage 26 (show at AggregateQueryRepository.scala:168)
+24/04/27 13:14:45 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 25)
+24/04/27 13:14:45 INFO DAGScheduler: Missing parents: List()
+24/04/27 13:14:45 INFO DAGScheduler: Submitting ResultStage 26 (MapPartitionsRDD[70] at show at AggregateQueryRepository.scala:168), which has no missing parents
+24/04/27 13:14:45 INFO MemoryStore: Block broadcast_26 stored as values in memory (estimated size 44.1 KiB, free 433.7 MiB)
+24/04/27 13:14:45 INFO MemoryStore: Block broadcast_26_piece0 stored as bytes in memory (estimated size 21.2 KiB, free 433.7 MiB)
+24/04/27 13:14:45 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on charleston.cs.colostate.edu:39973 (size: 21.2 KiB, free: 434.3 MiB)
+24/04/27 13:14:45 INFO SparkContext: Created broadcast 26 from broadcast at DAGScheduler.scala:1580
+24/04/27 13:14:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 26 (MapPartitionsRDD[70] at show at AggregateQueryRepository.scala:168) (first 15 tasks are for partitions Vector(0))
+24/04/27 13:14:45 INFO TaskSchedulerImpl: Adding task set 26.0 with 1 tasks resource profile 0
+24/04/27 13:14:45 INFO TaskSetManager: Starting task 0.0 in stage 26.0 (TID 114) (129.82.44.169, executor 9, partition 0, PROCESS_LOCAL, 7827 bytes)
+24/04/27 13:14:45 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 129.82.44.169:37571 (size: 21.2 KiB, free: 434.3 MiB)
+24/04/27 13:14:45 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 8 to 129.82.44.169:44878
+24/04/27 13:14:45 INFO TaskSetManager: Finished task 0.0 in stage 26.0 (TID 114) in 127 ms on 129.82.44.169 (executor 9) (1/1)
+24/04/27 13:14:45 INFO TaskSchedulerImpl: Removed TaskSet 26.0, whose tasks have all completed, from pool
+24/04/27 13:14:45 INFO DAGScheduler: ResultStage 26 (show at AggregateQueryRepository.scala:168) finished in 0.129 s
+24/04/27 13:14:45 INFO DAGScheduler: Job 17 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/27 13:14:45 INFO TaskSchedulerImpl: Killing all running tasks in stage 26: Stage finished
+24/04/27 13:14:45 INFO DAGScheduler: Job 17 finished: show at AggregateQueryRepository.scala:168, took 0.131011 s
++-----------------------+-----------+
+|PRIM_CONTRIBUTORY_CAUSE|Crash_Count|
++-----------------------+-----------+
+|    UNABLE TO DETERMINE|     315117|
+|   FAILING TO YIELD ...|      88952|
+|   FOLLOWING TOO CLO...|      78836|
+|         NOT APPLICABLE|      42889|
+|   IMPROPER OVERTAKI...|      39881|
+|   FAILING TO REDUCE...|      34238|
+|       IMPROPER BACKING|      31954|
+|    IMPROPER LANE USAGE|      29046|
+|   DRIVING SKILLS/KN...|      27054|
+|   IMPROPER TURNING/...|      26897|
+|   DISREGARDING TRAF...|      15755|
+|                WEATHER|      12349|
+|   OPERATING VEHICLE...|      10307|
+|   DISREGARDING STOP...|       8788|
+|   DISTRACTION - FRO...|       5560|
+|   EQUIPMENT - VEHIC...|       5049|
+|   PHYSICAL CONDITIO...|       4805|
+|   VISION OBSCURED (...|       4622|
+|   DRIVING ON WRONG ...|       4332|
+|   UNDER THE INFLUEN...|       3832|
++-----------------------+-----------+
+only showing top 20 rows
+
+===================================query execution time: 10469 milliseconds==========================================================
+====================================total execution time: 41643 milliseconds===========================================================
+24/04/27 13:14:45 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/04/27 13:14:45 INFO SparkUI: Stopped Spark web UI at http://charleston.cs.colostate.edu:4040
+24/04/27 13:14:45 INFO StandaloneSchedulerBackend: Shutting down all executors
+24/04/27 13:14:45 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+24/04/27 13:14:45 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/04/27 13:14:45 INFO MemoryStore: MemoryStore cleared
+24/04/27 13:14:45 INFO BlockManager: BlockManager stopped
+24/04/27 13:14:45 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/04/27 13:14:45 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/04/27 13:14:45 INFO SparkContext: Successfully stopped SparkContext
+24/04/27 13:14:45 INFO ShutdownHookManager: Shutdown hook called
+24/04/27 13:14:45 INFO ShutdownHookManager: Deleting directory /tmp/spark-2aac9a2c-255c-45a1-812c-5dcd7842043c
+24/04/27 13:14:45 INFO ShutdownHookManager: Deleting directory /tmp/spark-ff3f4830-b4b5-4568-88c4-977a6d0739d0
+charleston:~/Documents/cs555/Traffic-Collision-Analytics/Spark/CrashAnalyticsChicago/target$
+
