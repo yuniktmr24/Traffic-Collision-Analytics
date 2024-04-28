@@ -12,8 +12,8 @@ object CrashAggregate {
   def main(args: Array[String]): Unit = {
     val spark = CrashAggregateDataframe.spark
 
-    Logger.getLogger("org").setLevel(Level.ERROR)
-    Logger.getLogger("akka").setLevel(Level.ERROR)
+    Logger.getLogger("org").setLevel(Level.INFO)
+    Logger.getLogger("akka").setLevel(Level.INFO)
 
     var csvFilePath = ""
     if (args.length != 0) {
@@ -54,34 +54,34 @@ object CrashAggregate {
 
 
     /**Weather queries*/
-    AggregateQueryRepository.topWeatherConditionsDuringAccidents(spark)
-    AggregateQueryRepository.topStatesForHeavyRainAccidents(spark)
-    AggregateQueryRepository.topStatesForSnowAccidents(spark)
-    AggregateQueryRepository.topStatesForMostlyCloudyAccidents(spark)
-    AggregateQueryRepository.topStatesForFairWeatherAccidents(spark)
-
-
-    /**CO Queries*/
-    AggregateQueryRepository.topWeatherConditionsInColorado(spark)
-    AggregateQueryRepository.topWindDirectionInColorado(spark)
-    AggregateQueryRepository.topWeatherConditionsForI70Colorado(spark)
-
-
-    /**Interstates in General*/
-    AggregateQueryRepository.topInterstatesForAccidents(spark)
-    AggregateQueryRepository.topStatesForI95Accidents(spark)
-    AggregateQueryRepository.topStatesForI10Accidents(spark)
-    AggregateQueryRepository.topStatesForI5Accidents(spark)
-    AggregateQueryRepository.topStatesForI75Accidents(spark)
-    AggregateQueryRepository.topStatesForI80Accidents(spark)
-
-    /**Interstates in snow*/
-    AggregateQueryRepository.topInterstatesForSnowAccidents(spark)
-    AggregateQueryRepository.topStatesForI90SnowAccidents(spark)
-    AggregateQueryRepository.topStatesForI94SnowAccidents(spark)
-    AggregateQueryRepository.topStatesForI80SnowAccidents(spark)
-    AggregateQueryRepository.topStatesForI35SnowAccidents(spark)
-    AggregateQueryRepository.topStatesForI70SnowAccidents(spark)
+//    AggregateQueryRepository.topWeatherConditionsDuringAccidents(spark)
+//    AggregateQueryRepository.topStatesForHeavyRainAccidents(spark)
+//    AggregateQueryRepository.topStatesForSnowAccidents(spark)
+//    AggregateQueryRepository.topStatesForMostlyCloudyAccidents(spark)
+//    AggregateQueryRepository.topStatesForFairWeatherAccidents(spark)
+//
+//
+//    /**CO Queries*/
+//    AggregateQueryRepository.topWeatherConditionsInColorado(spark)
+//    AggregateQueryRepository.topWindDirectionInColorado(spark)
+//    AggregateQueryRepository.topWeatherConditionsForI70Colorado(spark)
+//
+//
+//    /**Interstates in General*/
+//    AggregateQueryRepository.topInterstatesForAccidents(spark)
+//    AggregateQueryRepository.topStatesForI95Accidents(spark)
+//    AggregateQueryRepository.topStatesForI10Accidents(spark)
+//    AggregateQueryRepository.topStatesForI5Accidents(spark)
+//    AggregateQueryRepository.topStatesForI75Accidents(spark)
+//    AggregateQueryRepository.topStatesForI80Accidents(spark)
+//
+//    /**Interstates in snow*/
+//    AggregateQueryRepository.topInterstatesForSnowAccidents(spark)
+//    AggregateQueryRepository.topStatesForI90SnowAccidents(spark)
+//    AggregateQueryRepository.topStatesForI94SnowAccidents(spark)
+//    AggregateQueryRepository.topStatesForI80SnowAccidents(spark)
+//    AggregateQueryRepository.topStatesForI35SnowAccidents(spark)
+//    AggregateQueryRepository.topStatesForI70SnowAccidents(spark)
 
     val endTime = System.currentTimeMillis()
 

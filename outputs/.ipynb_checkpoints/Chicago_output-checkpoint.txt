@@ -1,0 +1,136 @@
+Number of rows in CSV: 810066
+Number of columns in DataFrame: 48
+-----------------------------------------
+Number of Collisions Per Year
++----+-----------+
+|Year|Crash_Count|
++----+-----------+
+|2016|      44297|
+|2017|      83786|
+|2018|     118950|
+|2019|     117762|
+|2020|      92092|
+|2021|     108764|
+|2022|     108403|
+|2023|     110712|
++----+-----------+
+
+Number of Crashes Per Day of the Week
++-----------+-----------+
+|Day_of_Week|Crash_Count|
++-----------+-----------+
+|          6|     127693|
+|          7|     116223|
+|          5|     112678|
+|          3|     111746|
+|          4|     110946|
+|          2|     107803|
+|          1|      97677|
++-----------+-----------+
+
+Number of Crashes Per Hour of the Day (Ranked)
++-----------+-----------+
+|Hour_of_Day|Crash_Count|
++-----------+-----------+
+|         15|      62502|
+|         16|      61861|
+|         17|      60338|
+|         14|      54249|
+|         18|      49755|
+|         13|      49166|
+|         12|      47534|
+|          8|      42773|
+|         11|      41077|
+|          9|      37156|
+|         10|      36851|
+|         19|      36749|
+|          7|      34189|
+|         20|      29609|
+|         21|      26444|
+|         22|      24323|
+|         23|      21087|
+|          6|      17620|
+|          0|      17580|
+|          1|      15062|
++-----------+-----------+
+only showing top 20 rows
+
+Number of Crashes Per Weather Condition
++--------------------+-----------+
+|   WEATHER_CONDITION|Crash_Count|
++--------------------+-----------+
+|               CLEAR|     635214|
+|                RAIN|      70832|
+|             UNKNOWN|      44582|
+|                SNOW|      28224|
+|     CLOUDY/OVERCAST|      24006|
+|               OTHER|       2584|
+|FREEZING RAIN/DRI...|       1688|
+|      FOG/SMOKE/HAZE|       1336|
+|          SLEET/HAIL|       1000|
+|        BLOWING SNOW|        440|
+|SEVERE CROSS WIND...|        153|
+|BLOWING SAND, SOI...|          7|
++--------------------+-----------+
+
+Number of Crashes Per First Crash Type
++--------------------+-----------+
+|          CRASH_TYPE|Crash_Count|
++--------------------+-----------+
+|NO INJURY / DRIVE...|     593925|
+|INJURY AND / OR T...|     216141|
++--------------------+-----------+
+
+Number of Crashes Per First Crash Type
++-----------------+-----------+
+|      ROAD_DEFECT|Crash_Count|
++-----------------+-----------+
+|       NO DEFECTS|     651789|
+|          UNKNOWN|     142419|
+|       RUT, HOLES|       6033|
+|            OTHER|       4424|
+|     WORN SURFACE|       3316|
+|  SHOULDER DEFECT|       1472|
+|DEBRIS ON ROADWAY|        613|
++-----------------+-----------+
+
+Number of Crashes per injury type
++--------------------+-----------+
+|  MOST_SEVERE_INJURY|Crash_Count|
++--------------------+-----------+
+|NO INDICATION OF ...|     696960|
+|NONINCAPACITATING...|      62839|
+|REPORTED, NOT EVI...|      33876|
+|INCAPACITATING IN...|      13723|
+|               FATAL|        888|
++--------------------+-----------+
+
+Number of Crashes Per contributory cause
++-----------------------+-----------+
+|PRIM_CONTRIBUTORY_CAUSE|Crash_Count|
++-----------------------+-----------+
+|    UNABLE TO DETERMINE|     315117|
+|   FAILING TO YIELD ...|      88952|
+|   FOLLOWING TOO CLO...|      78836|
+|         NOT APPLICABLE|      42889|
+|   IMPROPER OVERTAKI...|      39881|
+|   FAILING TO REDUCE...|      34238|
+|       IMPROPER BACKING|      31954|
+|    IMPROPER LANE USAGE|      29046|
+|   DRIVING SKILLS/KN...|      27054|
+|   IMPROPER TURNING/...|      26897|
+|   DISREGARDING TRAF...|      15755|
+|                WEATHER|      12349|
+|   OPERATING VEHICLE...|      10307|
+|   DISREGARDING STOP...|       8788|
+|   DISTRACTION - FRO...|       5560|
+|   EQUIPMENT - VEHIC...|       5049|
+|   PHYSICAL CONDITIO...|       4805|
+|   VISION OBSCURED (...|       4622|
+|   DRIVING ON WRONG ...|       4332|
+|   UNDER THE INFLUEN...|       3832|
++-----------------------+-----------+
+only showing top 20 rows
+
+
+Process finished with exit code 0
